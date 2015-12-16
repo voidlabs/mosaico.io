@@ -2,7 +2,7 @@
 layout: post
 title:  "Classifying Free Email Template Builders"
 date:   2015-11-10 12:30:00
-categories: email-template-editors
+categories: email-template-builders
 ---
 In the last years a lot of free to use email editors have been published on the web!
 This is a great news because creating a responsive email that works find on most email clients is a real PITA.
