@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Gmail tries to shrink your email with .munged class"
+title:  "Gmail on Android tries to shrink your email with .munged class"
 date:   2015-12-15 15:57:21
 categories: email-client-tricks
 ---
