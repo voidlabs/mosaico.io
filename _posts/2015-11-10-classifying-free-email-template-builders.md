@@ -11,14 +11,15 @@ Here we try to define a **basic classification framework** for email template bu
 
 ### Business Model
 
-When you use a **tool for free** it may help to understand how they plan to *monetize* it.
-- some tools are offered for free as a **channel to promote other services** (usually an ESP service): [FreeEmailEditor]() and [BeeFree]() belongs to this category.
-- some other tools are provided for free because they hope **you will buy commercial templates**: [Stamplia]() and [MailSalad]() do this.
-- some other tools are free as in freemium, so a free version exists to let people know **the commercial version**: [Responsizer](), [BeeFree](), [EdmDesigner]() and partly [Mosaico]() belongs to this one.
+When you use a **tool for free** it may help to understand how they plan to *monetize* it:
 
-Being the only **opensource** product, *Mosaico* has a special position in this categorization: we hope to make some money by providing **Commercial Support** for Mosaico but we mainly opensourced it with the hope to create a **community** around it.
+- some tools are offered for free as a **channel to promote other services**, usually an ESP service: [FreeEmailEditor]() and [BeeFree]() belongs to this category
+- some other tools are provided for free with the hope **you will buy commercial templates**: [Stamplia]() and [MailSalad]() do this
+- some other tools are free as in freemium, so a free version exists to let people know **the commercial version**: [Responsizer](), [BeeFree](), [EdmDesigner]() and partly [Mosaico]() belongs to this group
 
-Then you will find plenty of **proprietary Email Editors** built-in in the platform of most email marketing firms like *Mailchimp, CampaignMonitor, BenchmarkEmail* and more.
+Being the only **opensource** product, *Mosaico* has a special position in this categorization: of course we hope to make some money by providing **Commercial Support** for Mosaico but we mainly opensourced it with the hope to create a **community** around it.
+
+You will also find plenty of **proprietary Email Editors** built-in in the platform of most email marketing firms like *Mailchimp, CampaignMonitor, BenchmarkEmail* and more.
 
 <!--more-->
 
