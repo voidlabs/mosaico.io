@@ -1,0 +1,32 @@
+<div class="posts">
+    <div >
+      <h2 class="title">
+        <a href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-comment-o"></i>&nbsp;{{post.title}}</a>
+      </h2>
+      {% for category in post.categories %}
+          
+              <a  href="{{ site.baseurl }}/{{ category }}"  class="category label label-warning">
+                  {{ category | replace:'-',' '}}
+              </a>
+         
+
+          {% endfor %}
+    </div>
+    <div class="panel-body  excerpt">
+       
+          {{ post.excerpt }}
+         
+       
+    </div>
+    <div class="well well-sm operate">
+        <div class="pull-right">
+          <span class="time"><i class="fa fa-calendar-o"></i>&nbsp;{{ post.date | date: "%Y/%m/%d"}}</span>&nbsp;
+          <a class="btn btn-primary btn-l" href="{{ post.url | prepend: site.baseurl }}">Read More</a>
+                  <!--
+          <a class="comment" href="{{ post.url | prepend: site.url }}"><i
+                  class="fa fa-comment-o"></i>Comment</a>
+                //-->
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>

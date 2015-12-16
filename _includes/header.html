@@ -1,0 +1,80 @@
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                {% if page.url == "/index.html" %}
+                <a class="navbar-brand page-scroll" href="#page-top"><div class="logoContainer"></div></a>
+                {% else %}
+                 <a class="navbar-brand page-scroll" href="{{site.baseurl}}/index.html"><div class="logoContainer"></div></a>
+                {% endif %}
+            </div>
+            {% if page.url == "/index.html" %}
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">Try MOSAICO</a>
+                    </li>
+                    <!-- ko if: edits().length -->
+                     <li>
+                        <a class="page-scroll" href="#saved">Saved Sessions</a>
+                    </li>
+                     <!-- /ko -->
+                    <li>
+                        <a class="page-scroll" href="#services">Why MOSAICO</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Get Source Code</a>
+
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="{{site.baseurl}}/blog/">Blog</a>
+
+                    </li>
+                    
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            {% else %}
+             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="{{site.baseurl}}/index.html#about">Try MOSAICO</a>
+                    </li>
+                    <!-- ko if: edits().length -->
+                     <li>
+                        <a class="page-scroll" href="{{site.baseurl}}/index.html#saved">Saved Sessions</a>
+                    </li>
+                     <!-- /ko -->
+                    <li>
+                        <a class="page-scroll" href="{{site.baseurl}}/index.html#services">Why MOSAICO</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{{site.baseurl}}/index.html#portfolio">Get Source Code</a>
+
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="{{site.baseurl}}/blog/">Blog</a>
+
+                    </li>
+                    
+                    <li>
+                        <a class="page-scroll" href="{{site.baseurl}}/index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            {% endif %}
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>

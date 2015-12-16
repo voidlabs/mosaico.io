@@ -1,0 +1,77 @@
+<aside class="bg-primary"  id="footer">
+        <div class="container text-center">
+             <div class="row">
+                <div class="col-lg-12  text-right ">
+                    <p>MOSAICO.io is a <a href="http://www.voxmail.it">VoidLabs/VOXmail</a> Project -  VAT N.02137700395</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- jQuery -->
+    <script src="{{site.staticurl}}{{site.baseurl}}/frontpage/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{site.staticurl}}{{site.baseurl}}/frontpage/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{{site.staticurl}}{{site.baseurl}}/frontpage/js/jquery.easing.min.js"></script>
+    <script src="{{site.staticurl}}{{site.baseurl}}/frontpage/js/jquery.fittext.js"></script>
+    <script src="{{site.staticurl}}{{site.baseurl}}/frontpage/js/wow.min.js"></script>
+     {% if page.custom_css %}
+  {% for stylesheet in page.custom_css %}
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/{{ stylesheet }}.css" media="screen" type="text/css">
+  {% endfor %}
+{% endif %}
+
+{% if page.custom_js %}
+  {% for js_file in page.custom_js %}
+  <script src='{{site.staticurl}}{{site.baseurl}}/assets/script/{{ js_file }}.js' type="text/javascript"></script>
+  {% endfor %}
+{% endif %}
+<!--
+    <script src="{{site.baseurl}}/srv/config.js"></script>
+//-->
+    <!-- Custom Theme JavaScript -->
+    <script src="{{site.staticurl}}{{site.baseurl}}/frontpage/js/creative.js"></script>
+    <script>
+    var makeMosaicoTable = function(idtable) {
+      var data = [
+      '#1## 7### 8##4 ##9# 1 #2## ##9#',
+      '#<#4 #  3 #^^  #  # # #    #  6',
+      '5<## #  #  ### 7### # 3    #  #',
+      '#<0# ##0# ###6 2  # # ##8# 5###'
+      ];
+      var t = $('<table class="mosaico-text" id="mosaico-logo-'+idtable+'" />');
+      var rnd1, rnd2, tr, className;
+      for (var i = 0; i < data.length; i++) {
+        tr = $('<tr />');
+        for (var j = 0; j < data[i].length; j++) {
+          className = 'on';
+          rnd1 = rnd2 = '';
+          switch (data[i].substr(j, 1)) {
+            case '#': rnd1 = 'ce'; break;
+            case '<':
+            case '^':
+            case ' ': className = 'off'; break;
+            default:
+              rnd1 = "cc c"+data[i].substr(j, 1);
+              rnd2 = "s"+Math.floor((Math.random() * 10));
+          }
+          if (j > 0 && data[i].substr(j-1, 1) == '<') className += " pullleft";
+          if (i > 0 && data[i-1].substr(j, 1) == '^') className += " pullup";
+          var td = $('<td><div class="'+className+" "+rnd1+" "+rnd2+'"></div></td>');
+          tr.append(td);
+        }
+        t.append(tr);
+      }
+      return t;
+    };
+    $(function() {
+      makeMosaicoTable(1).appendTo($('.logoContainer'));
+      makeMosaicoTable(2).appendTo($('.logoContainerBig'));
+      $('.logoImage').remove();
+    });
+    // $('<hr/>').appendTo($('body'));
+    </script>
+</body>

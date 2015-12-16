@@ -1,0 +1,16 @@
+<div class="categories">
+    
+        <ul class="list-group categories">
+          <li class="list-group-item active bg-primary list-group-title">Categories</li>
+         
+          {% for category in site.categories %}
+          <li class="list-group-item">
+              <a class="catelink" href="{{ site.baseurl }}/{{category.first}}" >
+                  {{ category.first | replace:'-',' ' }}&nbsp;<span class="badge">{{ category.last.size }}</span>
+              </a>
+          </li> 
+
+          {% endfor %}
+        </ul>
+    
+</div>
