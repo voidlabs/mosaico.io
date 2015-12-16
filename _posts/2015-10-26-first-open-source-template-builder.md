@@ -6,9 +6,9 @@ categories: news
 ---
 After more than an year of research and development of *Mosaico* our `Email Editor`, we decided, this september, to let it out as `Open Source project` on gitHub.
 
-This decision was made after thinking a while, some dozen hours of meeting and an undeterminated number of coffee cups (**espresso**, please).
+![Mosaico OpenSource](https://raw.githubusercontent.com/voidlabs/mosaico.io/gh-pages/assets/images/mosaico_open_source.jpg)This decision was made after thinking a while, some dozen hours of meeting and an undeterminated number of coffee cups (**espresso**, please).
 
-![Mosaico OpenSource](https://raw.githubusercontent.com/voidlabs/mosaico.io/gh-pages/assets/images/mosaico_open_source.jpg)`Mosaico` is born to be the standard responsive editor of the italian **indipendent ESP [VOXmail](http://www.voxmail.it)**. Developing it was an hard work, trying to keep the UX as smooth as possible and maintain a certain level of flexibility.
+`Mosaico` is born to be the standard responsive editor of the italian **indipendent ESP [VOXmail](http://www.voxmail.it)**. Developing it was an hard work, trying to keep the UX as smooth as possible and maintain a certain level of flexibility.
 
 ##Mosaico is a Template-Driven Email Builder
 The features and the complexity of the editor (and the flexibility given to the user) are **based on the template itself** and not hardcoded in the editor interface.
