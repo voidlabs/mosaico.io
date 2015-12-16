@@ -45,7 +45,7 @@ td.munged {
 
 In the [template_conversation_lower.html](https://android.googlesource.com/platform/packages/apps/UnifiedEmail/+/525dfca7775adf3e01bb033122c9c7ed226ed213/res/raw/template_conversation_lower.html) there are some variables (including MUNGED_TABLE_stuff) and an include call to a javascript.
 
-```javascript   
+```html   
 <script type="text/javascript">
     var MSG_HIDE_ELIDED = '%s';
     var MSG_SHOW_ELIDED = '%s';
