@@ -33,6 +33,7 @@ layout: default
 
           {% endfor %}
     </div>
+    <div class="post-revisions"><a class="revision-history" href="https://github.com/voidlabs/mosaico.io/commits/{{ site.branch }}/{{ page.path }}" target="_blank">View revision history</a></div>
     <div class="panel-body  excerpt">
        
           {{ content }}
@@ -47,7 +48,15 @@ layout: default
         <div class="clearfix"></div>
     </div>
 </div>
-    
+<div class="row improve-article-wrapper">
+  <div class="col-sm-4 col-sm-offset-1">
+     <a class="btn btn-primary btn-lg" href="{{ site.github.repository_url }}/edit/{{ site.branch }}/{{ page.path }}" title="Help Improve article {{ page.path }}">Edit</a>
+   </div>
+   <div class="col-sm-6 col-sm-offset-1">
+   <p class="improve-article">This content is open source. <br />
+   Please <a href="{{ site.github.repository_url }}/edit/{{ site.branch }}/{{ page.path }}" title="Help Improve article {{ page.path }}">help improve it</a>.</p>
+  </div>
+</div>    
 </section> 
 <section class="col-md-4 col-sidebar well well-sm blog-sidebar">
     {% include categories.html%}
