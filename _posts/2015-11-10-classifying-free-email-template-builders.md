@@ -19,7 +19,7 @@ When you use a tool for free it may help to understand how they plan to monetize
 Being the only opensource product, Mosaico has a special position in this categorization: we hope we make some money by providing Commercial Support for Mosaico but we mainly opensourced it with the hope to create a community around it.
 
 Then you will find plenty of proprietary Email Editors built-in in the platform of most email marketing firms like Mailchimp, CampaignMonitor, BenchmarkEmail, 
-
+<!--more-->
 ## Architectural choices
 
 ### "Template based" vs "Built-in" HTML structure
