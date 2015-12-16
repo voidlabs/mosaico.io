@@ -10,15 +10,15 @@ This for, after much try and test, retry and retest, someone figured out how to 
 
 ```html
 <!--[if (gte mso 9)|(lte ie 8)]>
-        <table align="center" border="0" cellspacing="0" cellpadding="0" width="570">
-                <tr>
-                        <td align="center" valign="top">
-        <![endif]-->
-        <div class="oldwebkit" style="max-width: 570px;">
-                <table style="border-collapse: separate;border-spacing: 9px;width: 100%;max-width: 570px;background-color: #fff;" class="vb-row fullpad" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="9" width="570">
-                        <tbody>
-                                <tr>
-                                        <td class="mobile-row" style="font-size: 0;" align="center" valign="top">[...]
+    <table align="center" border="0" cellspacing="0" cellpadding="0" width="570">
+        <tr>
+            <td align="center" valign="top">
+<![endif]-->
+<div class="oldwebkit" style="max-width: 570px;">
+    <table style="border-collapse: separate;border-spacing: 9px;width: 100%;max-width: 570px;background-color: #fff;" class="vb-row fullpad" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="9" width="570">
+        <tbody>
+            <tr>
+                <td class="mobile-row" style="font-size: 0;" align="center" valign="top">[...]
 ```
 
 However this approach is not perfect: if you have three column layout, the stacked blocks on mobile version **will not cover the whole screen**, due to the max-width value being lower than the viewport width.
@@ -34,54 +34,53 @@ In the [template_conversation_upper.html](https://android.googlesource.com/platf
 
 ```css
 table.munged {
-          width: auto !important;
-          table-layout: auto !important;
-        }
-        td.munged {
-                width: auto !important;
-                white-space: normal !important;
-        }
+    width: auto !important;
+    table-layout: auto !important;
+    }
+td.munged {
+    width: auto !important;
+    white-space: normal !important;
+    }
 ```
 
 In the [template_conversation_lower.html](https://android.googlesource.com/platform/packages/apps/UnifiedEmail/+/525dfca7775adf3e01bb033122c9c7ed226ed213/res/raw/template_conversation_lower.html) there are some variables (including MUNGED_TABLE_stuff) and an include call to a javascript.
 
 ```javascript   
 <script type="text/javascript">
-        var MSG_HIDE_ELIDED = '%s';
-        var MSG_SHOW_ELIDED = '%s';
-                var DOC_BASE_URI = '%s';
-                var CONVERSATION_BASE_URI = '%s';
-                var WIDE_VIEWPORT_WIDTH = %s;
-                var WEBVIEW_WIDTH = %s;
-                var ENABLE_CONTENT_READY = %s;
-                var NORMALIZE_MESSAGE_WIDTHS = %s;
-                var ENABLE_MUNGE_TABLES = %s;
-                var ENABLE_MUNGE_IMAGES = %s;
-                var RUNNING_KITKAT_OR_LATER = %s;
-                var MSG_FORMS_ARE_DISABLED = '%s';
-        </script>
-        <script type="text/javascript" src="file:///android_asset/script.js"></script>
+    var MSG_HIDE_ELIDED = '%s';
+    var MSG_SHOW_ELIDED = '%s';
+    var DOC_BASE_URI = '%s';
+    var CONVERSATION_BASE_URI = '%s';
+    var WIDE_VIEWPORT_WIDTH = %s;
+    var WEBVIEW_WIDTH = %s;
+    var ENABLE_CONTENT_READY = %s;
+    var NORMALIZE_MESSAGE_WIDTHS = %s;
+    var ENABLE_MUNGE_TABLES = %s;
+    var ENABLE_MUNGE_IMAGES = %s;
+    var RUNNING_KITKAT_OR_LATER = %s;
+    var MSG_FORMS_ARE_DISABLED = '%s';
+</script>
+<script type="text/javascript" src="file:///android_asset/script.js"></script>
 ```
 
 In the [script](https://android.googlesource.com/platform/packages/apps/UnifiedEmail/+/525dfca7775adf3e01bb033122c9c7ed226ed213/assets/script.js#245) you'll find the **logic** upon the decision whether to add or not the class **“.munged”** is made.
 Everything is based on a constant **“WEBVIEW_WIDTH”** that is related - or appear to be - to the device itself.
 
 ```javascript  
-        documentWidth = document.body.offsetWidth;
-        goalWidth = WEBVIEW_WIDTH;
+documentWidth = document.body.offsetWidth;
+goalWidth = WEBVIEW_WIDTH;
 ```
 
 The code tries to apply the “munging”, then looks at the resulting width of the email.
 If the resulting width is *satisfying* (using a **TRANSFORM_MINIMUM_EFFECTIVE_RATIO** constant to determine the successful shrinking rate), the munging will be kept, otherwise the script will revert all the operations. 
 
 ```javascript  
-        // If the transformations shrank the width significantly enough, leave them in place.
-        // We figure that in those cases, the benefits outweight the risk of rendering artifacts.
-        if (!done && (elWidth - newWidth) / (elWidth - docWidth) >
-            TRANSFORM_MINIMUM_EFFECTIVE_RATIO) {
-                console.log("transform(s) deemed effective enough");
-                done = true;
-        }
+// If the transformations shrank the width significantly enough, leave them in place.
+// We figure that in those cases, the benefits outweight the risk of rendering artifacts.
+if (!done && (elWidth - newWidth) / (elWidth - docWidth) > TRANSFORM_MINIMUM_EFFECTIVE_RATIO) {
+    console.log("transform(s) deemed effective enough");
+    done = true;
+    }
 ```
 
 This kind of logic makes email testing on Gmail (Android) **really hard**, but at least we have the source code and we can understand how and why some “random” .munged class are added here and there.
