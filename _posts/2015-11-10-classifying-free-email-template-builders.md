@@ -41,8 +41,19 @@ Editors in the former category defines what flexibility to leave to **template d
 
 ### "Nesting level", dropzones and template elements.
 
-TODO introduce and explain maybe with the help of some images (single level, double levels, multiple levels)
+One of the key point of the architectural design of an email builder is how to let the user compose the email itself, what type of block or contents he can brings in and in which ways he could combine them.
+There are three strategies one can follow, from the simplest -and less flexible- to the most complex -and most flexible: let think about the newsletter as a Lego tower: in the first case, lets call it "single level", we made availble to the user a series of pre-builded floors, some with a bedroom and a kitchen, some other with two bedroom, another one with a bedroom, a kitchen and bathroom, and so on.
+The user can change the floor and wall color, some furniture but the bedrooms remains bedrooms, so if you want some other room disposition, you have to choose another block-floor from those the designer made available.
+Simple, effective, yet not so flexible.
 
+The second way -let's call it "double level" - will let the user choose from some generic "floors", with one, two, three generic rooms, not assigned to any function themselves.
+After the user have choose the floor, for example a double room one, he can choose the function and the furniture of every room, so he can even choose to have a floor made all of bathroom, even if this seems not so rational. So, to put it in a more mail oriented language, you have to choose if you want a block with one, two, three or even four column, then you can put in every column an image, a text, some buttons, social icons, and so on, creating your personal block.
+This is a little more complex than the single level, but the combo structure + content is powerful and useful.
+
+The last way - "Multiple Level" - let the user not only choose the floor structure -the number of rooms- but also let him divide again the rooms in "sub-rooms" and so on, nesting level on level.
+This kind of complexity let the user much flexibility at cost of a potentially uncontrollable result.
+
+So, the email template builders may be categorized upon this architectural design choice:
 Single level: Mosaico, Stamplia, MailSalad, FreeEmailEditor
 Double levels: BeeFree (structure+content)
 Multiple levels: EDMDesigner, Responsizer
