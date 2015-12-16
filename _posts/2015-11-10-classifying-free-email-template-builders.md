@@ -4,21 +4,21 @@ title:  "Classifying Free Email Template Builders"
 date:   2015-11-10 12:30:00
 categories: email-template-builders
 ---
-In the last years a lot of free to use email editors have been published on the web!
-This is a great news because creating a responsive email that works find on most email clients is a real PITA.
+In the last years a lot of **free to use email builders** have been published on the web!
+This is a great news because creating a **responsive email** that works fine on most email clients is a real PITA.
 
-Here we try to define a basic classification framework for email editors, for their Business Model and for their Architectural choices.
+Here we try to define a **basic classification framework** for email template builders, for their *Business Model* and for their *Architectural choices*.
 
-## Business Model
+#### Business Model
 
-When you use a tool for free it may help to understand how they plan to monetize it.
-- some tool is offered for free so to use it as a channel to promote other services (usually an ESP service): FreeEmailEditor and BeeFree belongs to this category.
-- some other tool is provided for free because they hope you will buy commercial templates: Stamplia and MailSalad do this.
-- some other tool is free as in freemium, so a free version exists so to let people know the commercial version: Responsizer, BeeFree, EdmDesigner and partly Mosaico belongs to this one.
+When you use a **tool for free** it may help to understand how they plan to *monetize* it.
+- some tools are offered for free as a **channel to promote other services** (usually an ESP service): [FreeEmailEditor]() and [BeeFree]() belongs to this category.
+- some other tools are provided for free because they hope **you will buy commercial templates**: [Stamplia]() and [MailSalad]() do this.
+- some other tools are free as in freemium, so a free version exists to let people know **the commercial version**: [Responsizer](), [BeeFree](), [EdmDesigner]() and partly [Mosaico]() belongs to this one.
 
-Being the only opensource product, Mosaico has a special position in this categorization: we hope we make some money by providing Commercial Support for Mosaico but we mainly opensourced it with the hope to create a community around it.
+Being the only **opensource** product, *Mosaico* has a special position in this categorization: we hope to make some money by providing **Commercial Support** for Mosaico but we mainly opensourced it with the hope to create a **community** around it.
 
-Then you will find plenty of proprietary Email Editors built-in in the platform of most email marketing firms like Mailchimp, CampaignMonitor, BenchmarkEmail, 
+Then you will find plenty of **proprietary Email Editors** built-in in the platform of most email marketing firms like *Mailchimp, CampaignMonitor, BenchmarkEmail* and more.
 <!--more-->
 ## Architectural choices
 
