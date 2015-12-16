@@ -10,7 +10,7 @@ This decision was made after thinking a while, some dozen hours of meeting and a
 
 ![Mosaico OpenSource](https://raw.githubusercontent.com/voidlabs/mosaico.io/gh-pages/assets/images/mosaico_open_source.jpg)`Mosaico` is born to be the standard responsive editor of the italian **indipendent ESP [VOXmail](http://www.voxmail.it)**. Developing it was an hard work, trying to keep the UX as smooth as possible and maintain a certain level of flexibility.
 
-###Mosaico is a Template driven Email Editor
+##Mosaico is a Template-Driven Email Builder
 The features and the complexity of the editor (and the flexibility given to the user) are **based on the template itself** and not hardcoded in the editor interface.
 This means that potentially anyone could convert his template in order to work with Mosaico.
 <!--more-->
