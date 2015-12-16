@@ -5,7 +5,7 @@
 
 @mixin transition-all() {
     -webkit-transition: all 0.35s;
-    -moz-transition: all 0.35s;
+    -moz-transition: all 0.35s
     transition: all 0.35s;
 } 
 
@@ -675,7 +675,7 @@ body {
     }
     li:hover{background-color:$theme-primary !important;}
     li.list-group-title:hover{background-color:transparent !important;}
-    .list-group-title{border:0px !important; text-transform:uppercase;text-align:center;font-size:0.8em }
+    .list-group-title{border:0px !important; text-transform:uppercase;text-align:center;font-size:0.8em; font-weight: bold; }
     .badge {  
         background-color: white !important;
         border-color: white !important;
