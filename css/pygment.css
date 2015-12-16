@@ -2,7 +2,7 @@
  * GitHub style for Pygments syntax highlighter, for use with Jekyll
  * Courtesy of GitHub.com
  */
-.highlight pre, .markdown-body pre {
+.highlight pre {
     padding: 16px;
     overflow: auto;
     font-size: 85%;
@@ -10,7 +10,7 @@
     background-color: #f7f7f7;
     border-radius: 3px;
     word-wrap: normal;
-    white-space: nowrap !important;
+    white-space: pre !important;
 }
 
 .highlight pre, pre, .highlight .hll { background-color: #f8f8f8; border: 1px solid #ccc; padding: 6px 10px; border-radius: 3px; }
