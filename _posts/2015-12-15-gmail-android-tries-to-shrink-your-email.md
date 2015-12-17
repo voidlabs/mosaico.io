@@ -89,3 +89,4 @@ This kind of logic makes email testing on Gmail (Android) **really hard**, but a
 
 By now we have reports this is only valid for **Gmail Android and not on Gmail in iOS**: maybe because of different viewport size, or maybe because it doesn't use this script at all.
 
+We set up a [Github Repository](https://github.com/bago/android-gmail-emulator) with a simple web page *you can download and test* with your HTML to better understand how **Gmail App for Android tries to break your email**.
