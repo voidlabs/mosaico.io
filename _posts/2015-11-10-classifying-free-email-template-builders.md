@@ -42,9 +42,9 @@ Template builders belonging to the latter category defines the **flexibility lev
 
 Editors in the former category defines what flexibility to leave to **template developers** and template developers choose how to use this flexibility: they target **two kind of users**: *"email developers"* and *"final users"* but they often fail to satisfy the **"advanced, but non-developer, user"**.
 
-### Nesting levels, dropzones and template elements
+![Floor and Levels](https://raw.githubusercontent.com/voidlabs/mosaico.io/gh-pages/assets/images/rooms.png)### Nesting levels, dropzones and template elements
 
-![Floor and Levels](https://raw.githubusercontent.com/voidlabs/mosaico.io/gh-pages/assets/images/rooms.png)One of the key point of the architectural design of an email builder is how to let the user compose the email itself, what **kind of blocks** or contents he can brings in and how he's allowed to **combine them**.
+One of the key point of the architectural design of an email builder is how to let the user compose the email itself, what **kind of blocks** or contents he can brings in and how he's allowed to **combine them**.
 
 Most editors let you build your email like building an apartment block: one floor at a time. We identified *three strategies* one can follow, from the simplest -and less flexible- to the most complex -and most flexible:
 
