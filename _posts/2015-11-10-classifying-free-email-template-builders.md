@@ -14,7 +14,9 @@ Here we try to define a **basic classification** for email template builders, fo
 When you use a **free tool** it may help to understand what's the plan to *monetize* it:
 
 - some tools are offered for free as a **channel to promote other services**, usually an ESP service: [FreeEmailEditor](http://freeemaileditor.com/) and [BeeFree](http://www.beefree.io/) belongs to this category
+
 - some other tools are provided for free with the hope **you will buy commercial templates**: [Stamplia](https://builder.stamplia.com) and [MailSalad](https://www.mailsalad.com/) do this
+
 - some other tools are free as in freemium, so a free version exists to let people know **the commercial version**: [Responsizer](http://www.responsizer.com/), [BeeFree](http://www.beefree.io/), [EdmDesigner](http://edmdesigner.com) and partly [Mosaico](http://mosaico.io) belongs to this group
 
 Being the only **opensource** product, *Mosaico* has a special position in this categorization: of course we hope to make some money by providing **Commercial Support** for Mosaico but we mainly opensourced it with the hope to create a **community** around it.
