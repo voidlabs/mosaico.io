@@ -22,6 +22,7 @@ Being the only **opensource** product, *Mosaico* has a special position in this 
 You will also find plenty of **proprietary Email Editors** built-in in the platform of most email marketing firms like *Mailchimp, CampaignMonitor, BenchmarkEmail* and many more.
 
 
+
 ### Architectural choices
 
 #### "Template based" vs "Built-in" HTML structure
