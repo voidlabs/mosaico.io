@@ -147,9 +147,9 @@ aside {
 #footer{
     padding:10px 0; 
     p{
-    font-size:0.7em;
-    @include sans-serif-font;
-    margin:0px;
+        font-size:0.9em;
+        @include sans-serif-font;
+        margin:0px;
     }
 }
 
