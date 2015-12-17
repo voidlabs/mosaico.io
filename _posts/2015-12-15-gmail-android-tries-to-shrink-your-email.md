@@ -26,7 +26,9 @@ However this approach is not perfect: if you have three column layout, the stack
 <!--more-->
 
 Sometimes the results, using this method, **appear to be slightly different** depending on the device you're reading the email on: the stacked columns in three column layout may, apparently randomly, **go at 100% width**, while they have to maintain their max-width, that is far less than the device viewport one. 
+This kind of behaviour was for the first time highlighted in a [Litmus community discussion](https://litmus.com/community/code/4410-gmail-app-stacked-column-width-woes-no-media-queries). 
 Moreover, after other testing, we've discovered that **Gmail app for Android** - and not for IOS as far as we know - upon certain circumstances **strips width and min-width properties and add a “.munged” class** on tables, td and images.
+
 
 Trying to discover how and why this stripping and adding is done, we've found some answer directly in the **Android Unified Email source code**:
 
