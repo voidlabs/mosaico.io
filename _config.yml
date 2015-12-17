@@ -8,7 +8,7 @@ staticurl: "http://gh.mosaico.io"
 twitter_username: mosaicoeditor
 github_username:  bago
 permalink: /:categories/:title/
-excerpt_separator: \n\n
+excerpt_separator: <!--more-->
 
 # Build settings
 markdown: redcarpet
