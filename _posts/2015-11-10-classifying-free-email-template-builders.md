@@ -44,7 +44,7 @@ Editors in the former category defines what flexibility to leave to **template d
 
 ### Nesting levels, dropzones and template elements
 
-One of the key point of the architectural design of an email builder is how to let the user compose the email itself, what **kind of blocks** or contents he can brings in and how he's allowed to **combine them**.
+![Floor and Levels](https://raw.githubusercontent.com/voidlabs/mosaico.io/gh-pages/assets/images/rooms.png)One of the key point of the architectural design of an email builder is how to let the user compose the email itself, what **kind of blocks** or contents he can brings in and how he's allowed to **combine them**.
 
 Most editors let you build your email like building an apartment block: one floor at a time. We identified *three strategies* one can follow, from the simplest -and less flexible- to the most complex -and most flexible:
 
