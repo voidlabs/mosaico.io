@@ -29,9 +29,7 @@
   <script src='{{site.staticurl}}{{site.baseurl}}/assets/script/{{ js_file }}.js' type="text/javascript"></script>
   {% endfor %}
 {% endif %}
-<!--
-    <script src="{{site.baseurl}}/srv/config.js"></script>
-//-->
+
     <!-- Custom Theme JavaScript -->
     <script src="{{site.staticurl}}{{site.baseurl}}/frontpage/js/creative.js"></script>
     <script>
@@ -74,19 +72,5 @@
     });
     // $('<hr/>').appendTo($('body'));
     </script>
-    
-{% if site.google_analytics_id %}
-  <!-- Google Analytics (http://google.com/analytics) -->
-  <script>
-    !function(j,e,k,y,l,L){j.GoogleAnalyticsObject=y,j[y]||(j[y]=function(){
-    (j[y].q=j[y].q||[]).push(arguments)}),j[y].l=+new Date,l=e.createElement(k),
-    L=e.getElementsByTagName(k)[0],l.src='//www.google-analytics.com/analytics.js',
-    L.parentNode.insertBefore(l,L)}(window,document,'script','ga');
-
-    ga('create', '{{ site.google_analytics_id }}', 'auto');
-    ga('send', 'pageview');
-
-  </script>
-{% endif %}
-
+    <script src="{{site.baseurl}}/srv/config.js"></script>
 </body>
