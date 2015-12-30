@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Outlook images: vspace, hspace, align madness"
-date:   2015-12-30 15:57:21
-draft: true
+date:   2015-12-30 20:57:21
+categories: email-client-tricks
 ---
 Once again **Outlook** seems to be a **nightmare** for all email coders.
 In the process of **design and coding the Versafix** template used in Mosaico, we faced many strange and subtle issues in the way browsers and clients render the final results.
