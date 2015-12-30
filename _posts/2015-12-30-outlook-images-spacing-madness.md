@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Outlook: vspace, hspace, image align madness"
+title:  "Outlook images: vspace, hspace, align madness"
 date:   2015-12-30 15:57:21
 draft: true
 ---
