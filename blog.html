@@ -21,7 +21,9 @@ permalink: /blog/
   <a href="/index.html">Home</a> &gt; Blog
 </div>
     {% for post in site.posts %}
-      {% include posts.html%}
+      {% if post.draft != true %}  
+        {% include posts.html%}
+      {% endif %}
     {% endfor %}
     
 </section>

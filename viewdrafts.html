@@ -1,35 +1,29 @@
 ---
 layout: default
+title: Drafts
 ---
-  <header class="blog-header">
+   <header class="blog-header">
         <div class="header-content">
             <div class="header-content-inner">
-               <table class="logoWrapper" valign="bottom" align="center"><tr><td valign="bottom"><img class="logoImage" alt="Mosaico.io" style="display: block;" src="{site.staticurl}}{{site.baseurl}}/assets/images/mosaicologo.png" /><div class="logoContainerBig"></div></td><td valign="top">
+               <table class="logoWrapper" valign="bottom" align="center"><tr><td valign="bottom"><img class="logoImage" alt="Mosaico.io" style="display: block;" src="{{ "/dist/img/mosaicologo.png" | prepend: site.baseurl }}" /><div class="logoContainerBig"></div></td><td valign="top">
                 </td></tr></table>
                  <h2 class="section-heading">Blog, news, announcement and more!</h2>
                     
             </div>
         </div>
     </header>
+
 <div class="container">
             <div class="row">
 <section class="col-md-8 col-content">
    <div class="breadcrumb">
-  <a href="/index.html">Home</a> &gt;  <a href="/blog/">Blog</a> &gt; {{page.title}} 
+  <a href="/index.html">Home</a> &gt; DRAFTS
 </div>
- {% if page.category != 'all'%}
-   {% for post in site.categories.[page.category] %}
-      {% if post.draft != true %}  
+    {% for post in site.posts %}
+      {% if post.draft == true %}  
         {% include posts.html%}
       {% endif %}
     {% endfor %}
- {% else %}
-  	{% for post in site.posts %}
-   		{% if post.draft != true %}  
-        {% include posts.html%}
-      {% endif %}
-    {% endfor %}
- {% endif %}
     
 </section>
 <section class="col-md-4 col-sidebar well well-sm  blog-sidebar">
@@ -40,3 +34,7 @@ layout: default
 </section>
 </div>
 </div>
+   
+  
+  
+
