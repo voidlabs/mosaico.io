@@ -4,22 +4,29 @@ title:  "Outlook: vspace, hspace, image align madness"
 date:   2015-12-30 15:57:21
 draft: true
 ---
-Well, it should be pretty simple, but I can't get it to work everywhere.
-
-The use case is social icons.
+Once again Outlook seems to be a nightmare for all email coders.
+In the process of design and coding the Versafix template used in Mosaico, we faced many strange and subtle issues in the way browsers and clients render the final results.
+One of the worst issues at first seemed just a little glimpse in the way Outlook manage the Social Icons block. In order to let the user specify the number and the type of icons, we just manage them as simple inline IMG, specifing an hspace properties (since we know that Outlook does not render css margin)
 
 ```html
 <img hspace="10" src="facebook.png">
 <img hspace="10" src="linkedin.png">
 ```
-If you send this one it mostly works, but Outlook 2007/10/13 do not show the "hspace".
-I tried adding padding/margin via CSS but the same Outlooks ignored them.
 
-Adding align="left" to the images made Outlook to start evaluating the hspace, but they "collapse" so that while other clients space them by 20 outlook will show 10 pixels only.
+It turned out that this solution mostly works, but Outlook 2007/10/13 do not show the "hspace".
+Obviously trying to add padding/margin via CSS has no results, since Outlook merely ignore them.
 
-The outlook 2007/2010 "half spacing issue" can be fixed by doubling the HSPACE and declaring the real spacing using margin style="Margin-left: spacing; Margin-right: spacing".
+Keeping testing, we found that adding align="left" to the images made Outlook to start evaluating the hspace, but for some reason decide to "collapse" two adjacent hspace in one, so that while other clients space icons by 20px, Outlook will show 10 pixels only.
 
-Then I found IE<=7 will combine margins+hspace so I added style="*margin-left: spacing; *margin-right: spacing": the star-hack target IE7 and older and fixes the double spacing issue.
+This Outlook 2007/2010 "half spacing issue" can be fixed by doubling the HSPACE value and declaring the real spacing using margin style="Margin-left: spacing; Margin-right: spacing", so other clients and webmail could arrange icons correctly.
+
+But this is not enough: IE<=7 combines css margins with hspace values, so we added some 
+
+```css
+style="*margin-left: spacing; *margin-right: spacing"
+```
+
+The star-hack target IE7 and older browsers and so fixes the double spacing issue. The "final" result is:
 
 ```html
 <img hspace="20" style="Margin-left: 10px; Margin-right: 10px; *margin-left: -10px; *margin-right: -10px" src="facebook.png">
