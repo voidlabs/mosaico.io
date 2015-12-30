@@ -15,6 +15,7 @@ One of the worst issues at first seemed just *a little glimpse* in the way Outlo
 
 It turned out that this solution mostly works, but **Outlook 2007/10/13** do not show the "hspace".
 Obviously trying to add **padding/margin via CSS has no results**, since Outlook merely ignore them.
+<!--break-->
 
 Keeping testing, we found that adding **align="left"** to the images made Outlook to start evaluating the **hspace**, but for some reason it decide to *"collapse" two adjacent hspace in one*, so that while other clients space icons by 20px, Outlook will show 10 pixels only.
 
