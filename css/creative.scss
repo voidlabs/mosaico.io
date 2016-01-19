@@ -728,3 +728,6 @@ body {
     background-color:transparent !important;
     padding-left:0px !important;
 }
+.posts table{
+ @include table-striped;
+}
