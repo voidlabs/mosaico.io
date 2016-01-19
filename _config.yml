@@ -18,4 +18,4 @@ excerpt_separator: <!--more-->
 markdown: redcarpet
 highlighter: pygments
 redcarpet:
-  extensions: ["footnotes", "smart", "hard_wrap", "no_intra_emphasis"]
+  extensions: ["footnotes", "smart", "hard_wrap", "no_intra_emphasis", "tables"]
