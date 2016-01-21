@@ -19,7 +19,7 @@ layout: default
 <div class="breadcrumb">
 	<a href="/index.html">Home</a> &gt; <a href="/blog/">Blog</a> &gt; {% for category in page.categories %}  <a  href="{{ site.baseurl }}/{{ category }}" style="text-transform:capitalize"> {{ category | replace:'-',' '}} </a> &gt; {% endfor %} {{page.title}}
 </div>
-<div class="posts">
+<div class="posts {{ page.class }}">
     <div >
       <h2 class="title">
        <i class="fa fa-comment-o"></i>&nbsp;{{page.title}}

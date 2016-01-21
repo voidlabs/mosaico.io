@@ -29,7 +29,29 @@
   <script src='{{site.staticurl}}{{site.baseurl}}/assets/script/{{ js_file }}.js' type="text/javascript"></script>
   {% endfor %}
 {% endif %}
+<script>
+  $(document).ready(function () {
+    $(".advtable table").addClass("table table-condensed table-bordered table-hover table-striped table-responsive adtable");
+    $(".advtable table td:contains('YES')").addClass("td-green");
 
+
+
+  });
+
+  $(document).ready(function(){
+
+    var updateTables=function(){$(".adtable").each(function(i,element){splitTable($(element));});return true;};
+$(window).load(updateTables);
+function splitTable(original){original.wrap("<div class='table-wrapper' />");
+var copy=original.clone();copy.find("td:not(:first-child), th:not(:first-child)").css("display","none");
+copy.removeClass("adtable");
+original.closest(".table-wrapper").append(copy);
+copy.wrap("<div class='pinned' />");original.wrap("<div class='scrollable' />");
+};
+$('[data-toggle="tooltip"]').tooltip(); 
+});
+
+</script>
     <!-- Custom Theme JavaScript -->
     <script src="{{site.staticurl}}{{site.baseurl}}/frontpage/js/creative.js"></script>
     <script>

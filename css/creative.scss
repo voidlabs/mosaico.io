@@ -728,3 +728,25 @@ body {
     background-color:transparent !important;
     padding-left:0px !important;
 }
+.table {
+    font-size:0.7em;
+    @include sans-serif-font;
+}
+.td-green {background-color:#090 !important}
+
+.adtable{ margin-bottom: 0;}
+    
+    .pinned { position: absolute; left: 0; top: 0; background: #fff; width: 150px; overflow: hidden; overflow-x: scroll; border-right: 1px solid #ccc; border-left: 1px solid #ccc; }
+    .pinned table { border-right: none; border-left: none; width: 100%; }
+    .pinned table th, .pinned table td { white-space: nowrap; }
+    .pinned td:last-child { border-bottom: 0; }
+    
+    div.table-wrapper { position: relative; margin-bottom: 20px; overflow: hidden; border-right: 1px solid #ccc; }
+    div.table-wrapper div.scrollable { margin-left: 150px; }
+    div.table-wrapper div.scrollable { overflow: scroll; overflow-y: hidden; }  
+    
+    .adtable td, .adtable th { position: relative; width:12.5% }
+    
+    .adtable th:first-child, .adtable td:first-child, .adtable td:first-child { display: none; }
+    
+
