@@ -68,3 +68,5 @@ Below you'll find the table, reporting which remote calls are triggered by vario
 |Video Webm || YES| || | YES | || 
 
 We are aware of less widespread email clients showing major privacy concerns (for example letting the script-in-script hack to pass through) but we decided to limit this post the most used platforms.
+
+Well, what are you waiting for? Go, run the **Email Privacy Tester** against your favourite email client and share the results!
