@@ -50,6 +50,10 @@
     <![endif]-->
 
      <script>
+      if (window.location.protocol != "https:" && (localStorage.getItem('edits') == null || localStorage.getItem('edits') == '[]')) {
+        window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+      }
+     
       var initialEdits = [];
       if (localStorage.getItem('edits')) {
         var editKeys = JSON.parse(localStorage.getItem('edits'));
