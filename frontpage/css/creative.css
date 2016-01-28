@@ -1,4 +1,4 @@
-html,
+btnhtml,
 body {
   height: 100%;
   width: 100%;
@@ -619,7 +619,6 @@ body {
 #contact .btn-large {
   color: white;
   border: 2px solid white;
-  margin-left: -10px;
   background-color: transparent;
   box-sizing: border-box;
   border-radius: 3px;
