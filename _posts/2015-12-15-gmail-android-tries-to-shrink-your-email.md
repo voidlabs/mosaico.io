@@ -4,7 +4,7 @@ title:  "Gmail App on Android tries to shrink your email with 'munged' classes"
 date:   2015-12-15 15:57:21
 categories: email-client-tricks
 ---
-Everybody knows that **Gmail** -web or app- **does not support media query** at all, stripping the whole *<style></style>* section from emails.
+Everybody knows that **Gmail** -web or app- **does not support media query** at all, stripping the whole *<style></style>* section from emails. 
 This for, after much try and test, retry and retest, someone figured out how to get a **“simil-responsive”** behaviour without css at all. This approach is called **“hybrid coding”** and by now is used by many template designers and also by **email template builder like Mosaico**.
 **Hybrid Coding** works making use of *width/max-width* or *width/min-width* couples, adding some conditional comments table structures for Outlook compatibility.
 
