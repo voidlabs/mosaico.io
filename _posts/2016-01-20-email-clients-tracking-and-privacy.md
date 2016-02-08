@@ -32,7 +32,7 @@ In order to partially protect the privacy of their users some email client recen
 
 **Gmail** have been the first to introduce a proxy, but now other email clients do that. Outlook.com does weird things by proxying only some of the remote images while letting most *audio requests and video src* to be directly requested from the original server (Gmail strips all of the tags related to audio and video, to be "safer").
 There's one more important difference between the two: Gmail does not only mask the IP (*so to prevent geolocalization*), but also the **user agent** (*bye bye device/client info*), while **Outlook.com** pass along the original user agent letting the sender detect which email reading environment is being used.
-
+ 
 Below you'll find the table, reporting which remote calls are triggered by various email clients and webmail.
 
 |CLIENTS<br /> &nbsp;|OUTLOOK 2000|THUNDER BIRD|MAIL MACOS|GMAIL WEBMAIL|GMAIL ANDROID|OUTLOOK WEBMAIL|AOL WEBMAIL|YAHOO WEBMAIL| 
