@@ -23,7 +23,7 @@ Most email clients have methods to get rid of most of them, but sometimes you wo
 We decided to test most used webmail and email clients throught the Email Privacy Tester and write down the resulting summary table.
 
 First of all the good news is that **none of the clients under test** implementing image blocking requested any remote content before the users unblocked them.
-
+ 
 We found it's probably *not ideal* to put all the "privacy tests" in a single "threatening email" because even a single weird test may alter the result of the others. **AOL**, for instance, *does not let the message hit your box* at all while **Outlook.com** block all contents and alert you it may be dangerous.
 
 In order to complete the test we've created a **less "messy"** email for AOL and Hotmail.
