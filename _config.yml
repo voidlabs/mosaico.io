@@ -16,7 +16,7 @@ permalink: /:categories/:title/
 excerpt_separator: <!--more-->
 
 # Build settings
-markdown: redcarpet
+# TEST FOR NEW GITHUB FEATURE markdown: redcarpet
 highlighter: pygments
 redcarpet:
   extensions: ["footnotes", "smart", "hard_wrap", "no_intra_emphasis", "tables"]
