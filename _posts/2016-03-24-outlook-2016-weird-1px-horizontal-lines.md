@@ -29,6 +29,7 @@ At first I thought I succeeded and found out the guilty code was the "cellspacin
 Here is the simplest HTML I've been able to write to reproduce the issue:
 
 ![Outlook 2016 Cellspacing Screenshot](https://raw.githubusercontent.com/voidlabs/mosaico.io/gh-pages/assets/images/outlook2016-cellspacing-lines.png)
+
 ```html
 <html><body>
   <table bgcolor="green" cellpadding="0" border="0" cellspacing="9"><tbody>
