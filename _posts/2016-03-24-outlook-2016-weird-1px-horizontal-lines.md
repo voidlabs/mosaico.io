@@ -20,6 +20,8 @@ First of all, in every screenshot I saw, the weird lines have the color of the b
 
 I spent at least a couple of days trying to simpify my email to isolate the issue, **but I failed**.
 
+### Maybe it is my abuse of CELLSPACING?
+
 At first I thought I succeeded and found out the guilty code was the "cellspacing" attribute. I also created a minimal example showing the issue using simple tables with cellspacing. 
 Here is the simplest HTML I've been able to write to reproduce the issue:
 
@@ -35,13 +37,15 @@ Here is the simplest HTML I've been able to write to reproduce the issue:
 </body></html>
 ```
 
-You can see the **great Outlook 2016 rendering**: note that the white line is not even in every line... one cell every ten or so is rendered fine:
 ![Outlook 2016 Cellspacing Screenshot](https://raw.githubusercontent.com/voidlabs/mosaico.io/gh-pages/assets/images/outlook2016-cellspacing-lines.png)
+You can see the **great Outlook 2016 rendering**: note that the white line is not even in every line... one cell every ten or so is rendered fine:
 
 Here is the Litmus Builder Project where you can also see that Outlook 2013 and older don't show that weird lines.
 [Litmus Builder project](https://litmus.com/builder/76a0fdb)
 
 So, once I found this **I started rewriting my whole template** to **avoid** using **cellspacing**, but I simply **wasted more time** because even without the cellspacing the issue was there!
+
+### Maybe it is something else in my HT-email-ML
 
 Here is the simplest HTML **not using cellspacing** and showing that **bad line of death**.
 
@@ -72,9 +76,11 @@ In this case **even the smallest change** to this html will produce good output:
 - you can reduce the content for the "p" or shrink/enlarge the table so that the output is not anymore on 5 lines and the line will disappear
 - you can change the px size of the title and the line will disappear, well, the line is there for specific title sizes (18, 22 and some more weird sequence, not a fibonacci ;-) )
 
+### And what about Mailchimp templates?
+
 So I started thinking **something was wrong in my HT-email-ML** as I didn't find other people on the web talking about those f**cking lines in outlook 2016 in their emails, so there must be something in the way I code email.
 I then **opened a Mailchimp** account and created a **template using their drag and drop editor**. I took one template, **changed the body background color** to a dark grey and added some block. I sent it to Outlook 2016 and whoops, **I obtained 2 thin dark lines appeared in my Outlook 2016**.
 
-### So, it's not my HTML, it's Outlook 2016
+## So, it's not my HTML, it's Outlook 2016
 
 Now I cannot give you a solution. I can tell you that the issue is reproducible: the same code produces the same lines. But you change something at the bottom of your email and you see lines appearing or disappearing at the top of the email.
