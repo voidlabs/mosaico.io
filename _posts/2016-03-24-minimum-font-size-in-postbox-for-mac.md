@@ -23,5 +23,7 @@ In fact the cell is not empty, it contains a no-breaking-space character to avoi
 
 As we can see, from this screenshots, Postbox assumes that you cannot have font-size below 11/12px, so it shows big and bold separator lines, and also 8px font-size paragraphs appear much largen than in Gmail.
 
+![Postbox Screenshot](https://raw.githubusercontent.com/voidlabs/mosaico.io/gh-pages/assets/images/postboxscreenshot.png)
+
 Due to the limited spread of Postbox, this is not a big issue: the results are slightly different from the original, but still acceptable.
 If you have found some more issue on Postbox rendering, let us know!
