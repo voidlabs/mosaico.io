@@ -15,6 +15,7 @@ So we do not expect much suprises from this wonderful client.
 Mhh, not so much, but we've found one behavior that's not "standard" and that potentially breaks one of the classical trick used to keep a table cell narrow as we want - with a background color.
 
 We're talking of
+
 ```html
 <td width="100%" height="2" style="font-size:1px;line-height:1px;width:100%;background-color:#953734">&nbsp;</td>
 ```
