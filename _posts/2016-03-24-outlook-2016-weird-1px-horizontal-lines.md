@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Outlook 2016 madness and the weird 1px thin horizontal lines
-date:   2016-03-24 21:00:21
+date:   2016-03-24 18:00:21
 categories: email-client-tricks
 draft: true
 ---
