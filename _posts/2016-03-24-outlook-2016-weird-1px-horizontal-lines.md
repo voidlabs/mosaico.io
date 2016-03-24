@@ -22,6 +22,7 @@ I spent at least a couple of days trying to simpify my email to isolate the issu
 
 At first I thought I succeeded and found out the guilty code was the "cellspacing" attribute. I also created a minimal example showing the issue using simple tables with cellspacing. 
 Here is the simplest HTML I've been able to write to reproduce the issue:
+
 ```html
 <html><body>
   <table bgcolor="green" cellpadding="0" border="0" cellspacing="9"><tbody>
@@ -33,6 +34,7 @@ Here is the simplest HTML I've been able to write to reproduce the issue:
   </tbody></table>
 </body></html>
 ```
+
 And here is the great Outlook 2016 rendering. Note that the white line is not even in every line... one cell every ten or so is rendered fine:
 ![Outlook 2016 Cellspacing Screenshot](https://raw.githubusercontent.com/voidlabs/mosaico.io/gh-pages/assets/images/outlook2016-cellspacing-lines.png)
 
@@ -42,7 +44,8 @@ And here is the Litmus Builder Project where you can also see that Outlook 2013 
 So, once I found this I started rewriting my whole template to avoid using cellspacing, but I simply wasted more time because even without the cellspacing the issue was there!
 
 Here is the simplest HTML not using cellspacing and showing that bad line of death.
-```
+
+```html
 <html>
 <body bgcolor="green" text="#919191" alink="#cccccc" vlink="#cccccc" style="margin: 0;padding: 0;color: #919191;">
 <table width="320" bgcolor="white"><tr><td>
@@ -62,7 +65,9 @@ Here is the simplest HTML not using cellspacing and showing that bad line of dea
 ```
 
 Unfortunately Litmus preview for Outlook 2016 Windows is down right now so I can't give you the link.
+
 In this case even the smallest change to this html will produce good output:
+
 - you can remove the align="left" from the last table and the line will disappear.
 - you can reduce the content for the "p" or shrink/enlarge the table so that the output is not anymore on 5 lines and the line will disappear
 - you can change the px size of the title and the line will disappear, well, the line is there for specific title sizes (18, 22 and some more weird sequence, not a fibonacci ;-) )
