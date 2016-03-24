@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Minimum Font Size in Postbox for Mac
-date:   2016-03-24 20:57:21
+date:   2016-03-24 15:57:21
 categories: email-client-tricks
 draft: true
 ---
