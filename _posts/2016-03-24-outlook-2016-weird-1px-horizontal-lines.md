@@ -13,7 +13,8 @@ In the last few months I've started seeing people complaining because of weird 1
 
 A couple of months ago a Mosaico user [reported an issue](https://github.com/voidlabs/mosaico/issues/93) against Mosaico's Master template, Versafix-1.
 
-So, I decided to investigate the issue and find out the problem, **but I failed**.
+So, I decided to investigate the issue and find out the problem, **but I failed**...
+<!--more-->
 
 First of all, in every screenshot I saw, the weird lines have the color of the background: so if your email body background and main content background have the same color you'll probably won't see the issue. Otherwise if you don't see the issue you probably are simply lucky... try to make your email longer and the issue will probably show up soon!
 
