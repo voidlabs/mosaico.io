@@ -3,20 +3,23 @@ layout: post
 title:  Outlook 2016 madness and the weird 1px thin horizontal lines
 date:   2016-03-24 18:00:21
 categories: email-client-tricks
-draft: true
 ---
 
-You probably know Outlook 2007 introduced a new email rendering engine to Outlook, named Word. The big idea from Microsoft was to replace an html rendering engine with a workprocessor rendering engine. This means most email out there now are full of coditional comments and the world is wasting petabytes and thousands email developers hours because of this brilliant choice.
-Microsoft already made a few major releases (Outlook 2010 and Outlook 2013) but still use the same rendering engine. Until Outlook 2016 the email rendering was really similar between the 3 versions, but now, with Outlook 2016 Microsoft brought its genius to an higher level: they keep using Work, but they introduced some more bugs.
+### Skip this paragraph if you already know Outlook s**ks since 2007
 
-In the last few months I've started seeing people complaining because of weird 1px thick horizontal lines appearing in the middle of their email when opened in Outlook 2016.
+You probably know Outlook 2007 introduced a new email rendering engine to Outlook, named Word. The big idea from Microsoft was to replace an html rendering engine with a workprocessor rendering engine. This means most email out there now are full of coditional comments and the world is wasting petabytes and thousands email developers hours because of this brilliant choice.
+Microsoft already made a few major releases (Outlook 2010 and Outlook 2013) but still use the same rendering engine. Until Outlook 2016 the email rendering was really similar between the 3 versions, but now, **with Outlook 2016 Microsoft brought this to an higher level**: **they keep using Work, but they introduced some more bugs** to make us happy.
+
+### The issue
+
+In the last few months I've started hearing people complaining because of **weird 1px thick horizontal lines appearing in the middle of their email** when opened in **Outlook 2016**.
 
 A couple of months ago a Mosaico user [reported an issue](https://github.com/voidlabs/mosaico/issues/93) against Mosaico's Master template, Versafix-1.
 
 So, I decided to investigate the issue and find out the problem, **but I failed**...
 <!--more-->
 
-First of all, in every screenshot I saw, the weird lines have the color of the background: so if your email body background and main content background have the same color you'll probably won't see the issue. Otherwise if you don't see the issue you probably are simply lucky... try to make your email longer and the issue will probably show up soon!
+First of all, in every screenshot I saw, **the weird lines have the color of the background**: so if your email body background and main content background have the same color you'll probably won't see the issue. Otherwise if you don't see the issue you probably are simply lucky... **try to make your email longer (more complex) and the issue will probably show up soon**!
 
 I spent at least a couple of days trying to simpify my email to isolate the issue, **but I failed**.
 
