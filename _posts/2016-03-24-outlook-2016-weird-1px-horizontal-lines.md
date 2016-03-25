@@ -72,7 +72,7 @@ Here is the simplest HTML **not using cellspacing** and showing that **bad line 
 </body></html> 
 ```
 
-Unfortunately Litmus preview for Outlook 2016 Windows is down right now so I can't give you the link.
+Unfortunately Litmus preview for Outlook 2016 Windows is down right now so I can't give you the link. **Update:** [Here is the Builder project](https://litmus.com/builder/abf9848) 
 
 In this case **even the smallest change** to this html will produce good output:
 
