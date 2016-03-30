@@ -8,7 +8,7 @@ categories: email-client-tricks
 ### Skip this paragraph if you already know Outlook s**ks since 2007
 
 You probably know Outlook 2007 introduced a new email rendering engine to Outlook, named Word. The big idea from Microsoft was to replace an html rendering engine with a workprocessor rendering engine. This means most email out there now are full of coditional comments and the world is wasting petabytes and thousands email developers hours because of this brilliant choice.
-Microsoft already made a few major releases (Outlook 2010 and Outlook 2013) but still use the same rendering engine. Until Outlook 2016 the email rendering was really similar between the 3 versions, but now, **with Outlook 2016 Microsoft brought this to an higher level**: **they keep using Work, but they introduced some more bugs** to make us happy.
+Microsoft already made a few major releases (Outlook 2010 and Outlook 2013) but still use the same rendering engine. Until Outlook 2016 the email rendering was really similar between the 3 versions, but now, **with Outlook 2016 Microsoft brought this to an higher level**: **they keep using Word, but they introduced some more bugs** to make us happy.
 
 ### The issue
 
