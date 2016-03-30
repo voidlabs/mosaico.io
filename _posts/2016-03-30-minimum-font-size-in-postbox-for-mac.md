@@ -9,7 +9,7 @@ draft: true
 Email clients **is a wide and complex world**: not considering the most used ones, there's a whole bunch of *"minor"* clients for every device and operative system.
 
 Every client has his **bugs and glitches** (and template editors like Mosaico exist to *simplify all this mess*), and there's no day without a new surprise.
-This time we talk about **Postbox for Ma**c, a powerful, yet not so used, client; his rendering  engine is based on **Gecko**, like **Thunderbird**.
+This time we talk about **Postbox for Mac**, a powerful, yet not so used, client; his rendering  engine is based on **Gecko**, like **Thunderbird**.
 
 So we do not expect much suprises from this wonderful client. 
 Mhh, *not so much*, but we've found **one behavior that's not "standard"** and that potentially breaks one of the classical trick used to *keep a table cell narrow as we want - with a background color*.
