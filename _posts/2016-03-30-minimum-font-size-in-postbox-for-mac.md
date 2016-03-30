@@ -6,7 +6,7 @@ categories: email-client-tricks
 draft: false
 ---
 
-Email clients **is a wide and complex world**: not considering the most used ones, there's a whole bunch of *"minor"* clients for every device and operative system.
+Email clients world **is wide and complex**: not considering the most used ones, there's a whole bunch of *"minor"* clients for every device and operative system.
 
 Every client has his **bugs and glitches** (and template editors like Mosaico exist to *simplify all this mess*), and there's no day without a new surprise.
 This time we talk about **Postbox for Mac**, a powerful, yet not so used, client; his rendering  engine is based on **Gecko**, like **Thunderbird**.
