@@ -7,7 +7,7 @@ categories: email-client-tricks
 
 ### Skip this paragraph if you already know Outlook s**ks since 2007
 
-You probably know Outlook 2007 introduced a new email rendering engine to Outlook, named Word. The big idea from Microsoft was to replace an html rendering engine with a workprocessor rendering engine. This means most email out there now are full of coditional comments and the world is wasting petabytes and thousands email developers hours because of this brilliant choice.
+You probably know Outlook 2007 introduced a new email rendering engine to Outlook, named Word. The big idea from Microsoft was to replace an html rendering engine with a wordprocessor rendering engine. This means most email out there now are full of coditional comments and the world is wasting petabytes and thousands email developers hours because of this brilliant choice.
 Microsoft already made a few major releases (Outlook 2010 and Outlook 2013) but still use the same rendering engine. Until Outlook 2016 the email rendering was really similar between the 3 versions, but now, **with Outlook 2016 Microsoft brought this to an higher level**: **they keep using Word, but they introduced some more bugs** to make us happy.
 
 ### The issue
@@ -21,7 +21,7 @@ So, I decided to investigate the issue and find out the problem, **but I failed*
 
 First of all, in every screenshot I saw, **the weird lines have the color of the background**: so if your email body background and main content background have the same color you'll probably won't see the issue. Otherwise if you don't see the issue you probably are simply lucky... **try to make your email longer (more complex) and the issue will probably show up soon**!
 
-I spent at least a couple of days trying to simpify my email to isolate the issue, **but I failed**.
+I spent at least a couple of days trying to simplify my email to isolate the issue, **but I failed**.
 
 ### Maybe it is my abuse of CELLSPACING?
 
@@ -42,7 +42,7 @@ Here is the simplest HTML I've been able to write to reproduce the issue:
 </body></html>
 ```
 
-You can see the **great Outlook 2016 rendering**: note that the white line is not even in every line... one cell every ten or so is rendered fine:
+You can see the **great Outlook 2016 rendering**: note that the white line is not even in every <td>... one cell every ten or so is rendered fine:
 
 Here is the Litmus Builder Project where you can also see that Outlook 2013 and older don't show that weird lines.
 [Litmus Builder project](https://litmus.com/builder/76a0fdb)
