@@ -3,7 +3,7 @@ layout: post
 title:  Minimum Font Size in Postbox for Mac
 date:   2016-03-30 12:57:21
 categories: email-client-tricks
-draft: true
+draft: false
 ---
 
 Email clients **is a wide and complex world**: not considering the most used ones, there's a whole bunch of *"minor"* clients for every device and operative system.
