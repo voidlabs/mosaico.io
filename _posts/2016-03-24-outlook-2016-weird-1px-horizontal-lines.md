@@ -82,7 +82,7 @@ In this case **even the smallest change** to this html will produce good output:
 
 ### And what about Mailchimp templates?
 
-So I started thinking **something was wrong in my HT-email-ML** as I didn't find other people on the web talking about those f**cking lines in outlook 2016 in their emails, so there must be something in the way I code email.
+So I started thinking **something was wrong in my HT-email-ML** as I didn't find other people on the web talking about those f@@cking lines in outlook 2016 in their emails, so there must be something in the way I code email.
 I then **opened a Mailchimp** account and created a **template using their drag and drop editor**. I took one template, **changed the body background color** to a dark grey and added some block. I sent it to Outlook 2016 and whoops, **I obtained 2 thin dark lines appeared in my Outlook 2016**.
 
 ## So, it's not my HTML, it's Outlook 2016
