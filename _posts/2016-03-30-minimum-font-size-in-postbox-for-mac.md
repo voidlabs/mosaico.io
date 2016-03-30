@@ -13,6 +13,7 @@ This time we talk about **Postbox for Mac**, a powerful, yet not so used, client
 
 So we do not expect much suprises from this wonderful client. 
 Mhh, *not so much*, but we've found **one behavior that's not "standard"** and that potentially breaks one of the classical trick used to *keep a table cell narrow as we want - with a background color*.
+<!--more-->
 
 We're talking of
 
