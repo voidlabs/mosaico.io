@@ -16,6 +16,7 @@ github_username:  bago
 permalink: /:categories/:title/
 excerpt_separator: <!--more-->
 
+
 # Build settings
 # TEST FOR NEW GITHUB FEATURE markdown: redcarpet
 highlighter: rouge
