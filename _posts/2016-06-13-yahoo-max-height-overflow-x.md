@@ -9,7 +9,7 @@ draft: true
 Every single webmail system has its way to handle email rendering: to avoid **security issues** and to prevent **css inconsistent transformation of the whole interface**, webmail systems cut and transform many css instructions.
 One of the most strict is **Gmail**: no style, no mediaquery, and many css properties being deleted.
 
-**Yahoo** works in a similar way, too, but recently they changed something and (@nicolemerlin|https://twitter.com/moonstrips/status/738641345259016192) tweeted:
+**Yahoo** works in a similar way, too, but recently they changed something and [@nicolemerlin](https://twitter.com/moonstrips/status/738641345259016192) tweeted:
 > Yahoo! Mail seems to be adding overflow-x:auto to long divs,
 > resulting in scrollbars + content squishing/stacking
 
@@ -41,3 +41,8 @@ Unfortunately, this trick will **not work on Internet Explorer**: the way IE han
 Althought we cannot imagine the reason behind this strange css transformations made by Yahoo webmail, this is just another proof of how difficoult it is to mantain a reliable rendering of html email templates.
 
 Creating a good email template is hard, mantaining it is even harder.
+
+References:
+[Litmus Discussion](https://litmus.com/community/discussions/5336-yahoo-mail-update-potentially-breaks-hybrid-emails)
+[@hteumeuleu github issue](https://github.com/hteumeuleu/email-bugs/issues/17)
+[Twitter Discussion](https://twitter.com/moonstrips/status/738641345259016192)
