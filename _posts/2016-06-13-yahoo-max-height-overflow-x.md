@@ -1,9 +1,8 @@
 ---
 layout: post
-title:  Yahoo Webmail add overflow-y/x on use of max-height/width 
+title:  About unexpected scrollbars in the Yahoo webmail
 date:   2016-06-13 07:00:00
 categories: email-client-tricks
-draft: true
 ---
 
 Every single webmail system has its way to handle email rendering: to avoid **security issues** and to prevent **css inconsistent transformation of the whole interface**, webmail systems cut and transform many css instructions.
