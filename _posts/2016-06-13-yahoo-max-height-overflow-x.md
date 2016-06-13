@@ -43,7 +43,4 @@ Althought we cannot imagine the reason behind this strange css transformations m
 
 Creating a good email template is hard, mantaining it is even harder.
 
-References:
-[Litmus Discussion](https://litmus.com/community/discussions/5336-yahoo-mail-update-potentially-breaks-hybrid-emails)
-[@hteumeuleu github issue](https://github.com/hteumeuleu/email-bugs/issues/17)
-[Twitter Discussion](https://twitter.com/moonstrips/status/738641345259016192)
+References: [Litmus Discussion](https://litmus.com/community/discussions/5336-yahoo-mail-update-potentially-breaks-hybrid-emails), [@hteumeuleu github issue](https://github.com/hteumeuleu/email-bugs/issues/17), [Twitter Discussion](https://twitter.com/moonstrips/status/738641345259016192)
