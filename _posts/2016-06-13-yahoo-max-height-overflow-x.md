@@ -10,6 +10,7 @@ Every single webmail system has its way to handle email rendering: to avoid **se
 One of the most strict is **Gmail**: no style, no mediaquery, and many css properties being deleted.
 
 **Yahoo** works in a similar way, too, but recently they changed something and [@nicolemerlin](https://twitter.com/moonstrips/status/738641345259016192) tweeted:
+
 > Yahoo! Mail seems to be adding overflow-x:auto to long divs,
 > resulting in scrollbars + content squishing/stacking
 
@@ -24,7 +25,7 @@ We could assume that the **main html/css purification is done server side**, str
 
 The last transformations - the ones involving width and height for instance - are done by a little piece of javascript code, with some really simple regular expressions:
 
-```html
+```javascript
 replace(/position\s*?:\s*?(fixed|absolute)/ig, ""),
 replace(/([^a-z-])height\s*:|^height\s*:/gi, "$1min-height:"),
 replace(/max-height/gi, "overflow-y:auto;max-height"),
