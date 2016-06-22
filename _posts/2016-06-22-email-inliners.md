@@ -8,11 +8,17 @@ draft: yes
 ---
 
 In order to make emails and email templates compatible with most of the clients and webmails out there, we know that we have to avoid at most everything that is not pure inline css 1 style.
+
 To be honest this is true mainly for the two bad guys of email rendering - Outlook and Gmail - but a lot of other webmails and clients have some glitches and behaviour that makes inline style the good choice.
+
 Coding direct inline styles is really an hell of work, and every little adjustment means tons of code, with lot of errors and mistyping.
+
 So here come Email CSS inliners: these lovely pieces of code take your css and html and give you back your "css inlined" email template, ready to be sent.
+
 Simple (ahem...) and effective (ahem...), but how inliners do work and how much are they reliable?
+
 How do I choose my inliner? Many ESP have their native inliners, and some other are available on web or as library.
+
 We tried to analize the most used of them, in order to understand the strategy behind, the weakness and the strenghts.
 <!--break-->
 
