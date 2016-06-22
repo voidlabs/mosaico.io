@@ -3,7 +3,7 @@ layout: post
 title:  Email inliners
 date:   2016-06-22 07:00:00
 categories: email-client-tricks
-class: advtable
+class: advtable2
 draft: yes
 ---
 
