@@ -21,6 +21,7 @@ How do I choose my inliner? Many ESP have their native inliners, and some other 
 
 We tried to analize the most used of them, in order to understand the strategy behind, the weakness and the strenghts.
 <!--more-->
+
 The CSS inliners we've tested are:
 
 - [Litmus Putsmail](https://putsmail.com/inliner) 
@@ -36,6 +37,7 @@ The CSS inliners we've tested are:
 Inlining is not a plain and simple procedure: complex css with lot of selectors and rules are not simple to inline, and sometimes are impossible to, so every inliner has its strategy to stick css and html dom together.
 Moreover css shorthand and tricks makes the things even more chaotic and unpredictable.
 
+Here is a compact table of the results of test, the table is quite large, so if you prefer, here is the [google sheets version](https://docs.google.com/spreadsheets/d/1B4wR8g5JrmD6lNdoQEtw9Z2DzGkrjxRV536ag21nunE/edit?usp=sharing)
 
 | INLINER                        | Litmus                                           | Campaign Monitor                                        | Mailchimp                                                                                                                             | Premailer                                                               | Zurb                                                                                                                                              | Torchbox                                                                                                                               | MailerMailer                                                                                                                                                                                                                                                     | Juice                                      | Styliner                                                                                                                                                                                             |
 |--------------------------------|--------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -50,5 +52,27 @@ Moreover css shorthand and tricks makes the things even more chaotic and unpredi
 | Pseudoselectors Support        | * :first-child not supported                     | NONE                                                    | FULL                                                                                                                                  | FULL                                                                    | FULL                                                                                                                                              | FULL                                                                                                                                   | * :not() and :empty() not supported                                                                                                                                                                                                                              | FULL                                       | FULL                                                                                                                                                                                                 |
 | CSS Inline refactoring         | NONE                                             | FULL                                                    | NONE                                                                                                                                  | FULL                                                                    | FULL                                                                                                                                              | NONE                                                                                                                                   | FULL                                                                                                                                                                                                                                                             | NONE                                       | * strips comments                                                                                                                                                                                    |
 | HTML refactoring               | * some code prettify                             | NONE                                                    | NONE                                                                                                                                  | * add or remove some /n                                                 | * add or remove some /n                                                                                                                           | NONE                                                                                                                                   | * some code prettify                                                                                                                                                                                                                                             | NONE                                       | NONE                                                                                                                                                                                                 |
+
+
+We've checked some behaviours we think are important in email design, such has: multiple property declarations, selectors order, shorthands expansion, @media inclusion strategy, value parsing, pseudoselector support...
+
+In email design it's usual to use some property redundance in order to achieve complete browser/client support. For example, take this code
+
+```css
+  .myhumbleclass {
+  background-color: #5f9c8c; /* Fallback */
+  background-color: rgba(95, 156, 140, 0.7);
+  }
+```
+
+So, if your browser/client understand rgba colors, it will use them, otherways it will use the standard hexadecimal rgb color.
+However most inliners will break this trick: in case o multiple property values, they will take only the last value, leaving an invalid rule for clients and browser that does not understand rgba colors.
+
+In our test only Litmus inliner will take every single rule, even if duplicated, and put it in every piece of Dom indicated by selectors. 
+In this case the resulting code will be huge and extremely verbose, but effective.
+
+Styliner uses a kind of smart behaviour: it will maintain the duplicated properties only if in the same selector.
+The assumption is that tricks like these are made within the single selector, not in multiple selectors. 
+The resulting code is somehow less verbose, and in most case the tricks will work.
 
 
