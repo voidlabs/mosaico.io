@@ -7,7 +7,7 @@ class: advtable2
 draft: yes
 ---
 
-In order to make emails and email templates compatible with most of the clients and webmails out there, we know that we have to avoid at most everything that is not pure inline css 1 style.
+In order to make emails and email templates compatible with most of the clients and webmails out there, we know that we have to avoid at most everything that is not pure inline css1 style.
 
 To be honest this is true mainly for the two bad guys of email rendering - Outlook and Gmail - but a lot of other webmails and clients have some glitches and behaviour that makes inline style the good choice.
 
@@ -21,6 +21,21 @@ How do I choose my inliner? Many ESP have their native inliners, and some other 
 
 We tried to analize the most used of them, in order to understand the strategy behind, the weakness and the strenghts.
 <!--break-->
+The CSS inliners we've tested are:
+
+- [Litmus Putsmail](https://putsmail.com/inliner) 
+- [Campaign Monitor](https://inliner.cm/)
+- [Mailchimp](http://templates.mailchimp.com/resources/inline-css/)
+- [Premailer](http://premailer.dialect.ca/)
+- [Zurb](http://foundation.zurb.com/emails/inliner.html)
+- [Torchbox](https://inlinestyler.torchbox.com/)
+- [MailerMailer](http://www.mailermailer.com/labs/tools/magic-css-inliner-tool.rwp)
+- [Juice](http://automattic.github.io/juice/)
+- [Styliner](https://github.com/SLaks/Styliner)
+
+Inlining is not a plain and simple procedure: complex css with lot of selectors and rules are not simple to inline, and sometimes are impossible to, so every inliner has its strategy to stick css and html dom together.
+Moreover css shorthand and tricks makes the things even more chaotic and unpredictable.
+
 
 | INLINER                        | Litmus                                           | Campaign Monitor                                        | Mailchimp                                                                                                                             | Premailer                                                               | Zurb                                                                                                                                              | Torchbox                                                                                                                               | MailerMailer                                                                                                                                                                                                                                                     | Juice                                      | Styliner                                                                                                                                                                                             |
 |--------------------------------|--------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
