@@ -20,7 +20,7 @@ Simple (ahem...) and effective (ahem...), but how inliners do work and how much 
 How do I choose my inliner? Many ESP have their native inliners, and some other are available on web or as library.
 
 We tried to analize the most used of them, in order to understand the strategy behind, the weakness and the strenghts.
-<!--break-->
+<!--more-->
 The CSS inliners we've tested are:
 
 - [Litmus Putsmail](https://putsmail.com/inliner) 
