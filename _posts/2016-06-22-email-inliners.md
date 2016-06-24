@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Email CSS inliners
+title:  The Perfect Email CSS Inliner
 date:   2016-06-22 07:00:00
 categories: email-client-tricks
 class: advtable2
