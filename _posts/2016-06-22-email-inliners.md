@@ -31,8 +31,8 @@ The CSS inliners we've tested are:
 - [Zurb](http://foundation.zurb.com/emails/inliner.html)
 - [Torchbox](https://inlinestyler.torchbox.com/)
 - [MailerMailer](http://www.mailermailer.com/labs/tools/magic-css-inliner-tool.rwp)
-- [Juice](http://automattic.github.io/juice/)
-- [Styliner](https://github.com/SLaks/Styliner)
+- [Juice v2.0](http://automattic.github.io/juice/)
+- [Styliner v1.0](https://github.com/SLaks/Styliner)
 
 *Inlining is not a plain and simple procedure*: complex css with lot of selectors and rules are not simple to inline, and **sometimes are impossible to**, so every inliner has its strategy to stick css and html dom together.
 Moreover css shorthand and tricks makes the things even more chaotic and unpredictable.
@@ -85,6 +85,6 @@ Also the way of **handling shorthand could bring some problem**: in css properti
 There are also some minor issues, *like if inlining or not !important and html refactoring, indentation and newline insertion*, but the amazing thing is the **number of bugs and potential issues of many inliners**: **MailerMailer**, just to make an example, **cannot process correcty css with quotes** (like url('myurl')) or base64, breaking up the whole template.
 Other issues are more subtle, like **casual reorders**, or bad assumption in **property splitting, or value parsing**, that could break special trick and more.
 
-So, inliner is the **final chain of your email design process**: choose it wisely!
+So, inliner is the **final chain of your email design process**: choose it wisely, by now we reccomend, without any doubt, [Litmus Putsmail](https://putsmail.com/inliner), whe think that it has the **right approach**, granting good **preservation of styling** at the price of some verbosity of the final code.
 
 
