@@ -65,7 +65,7 @@ In email design it's usual to use some property redundance in order to achieve c
   }
 ```
 
-So, if your browser/client understand rgba colors, it will use them, otherways it will use the standard hexadecimal rgb color.
+So, if your browser/client understands rgba colors, it will use them, otherways it will use the standard hexadecimal rgb color.
 However most inliners will break this trick: in case o multiple property values, they will take only the last value, leaving an invalid rule for clients and browser that does not understand rgba colors.
 
 In our test only Litmus inliner will take every single rule, even if duplicated, and put it in every piece of Dom indicated by selectors. 
@@ -74,5 +74,14 @@ In this case the resulting code will be huge and extremely verbose, but effectiv
 Styliner uses a kind of smart behaviour: it will maintain the duplicated properties only if in the same selector.
 The assumption is that tricks like these are made within the single selector, not in multiple selectors. 
 The resulting code is somehow less verbose, and in most case the tricks will work.
+
+Media queries and MEDIA="xyz" style tag property are not replicable in inlined css, so, ideally, css inliners have to ignore them and leave them in the original format. 
+In out tests turns out that this assumption is no always valid: only Litmus inliner follow this rule, while the other, in best case scenarios keeps correctly @media, while inlining MEDIA="SCREEN" style rules and properties (not so bad, but we think that every style with media indication has to be left untouched, potentially inlining of media screen could break for example the MEDIA="PRINT" rules), but in worst case we have inliners such as Premailer an Zurb that inlines almost every @media and MEDIA content, breaking the whole result.
+
+Moreover the inliner has to decide what to do with the selectors and rules it does not understand or process: some decide to include the whole original style, like Campaign Monitor, Mailchimp and MailerMailer, some other tries to do some optimization, including only @media and unprocessed selectors (like Litmus), someother break everything trying to do this (Styliner), and, well, Torchbox strips everything (sigh).
+
+Also the way of handling shorthand could bring some problem: in css properties order and shorthand use are important, and  shorthand splitting or aggregation and casual property reorder in Zurb, Premailer, Torchbox and Styliner could break your template in many subtle ways.
+
+
 
 
