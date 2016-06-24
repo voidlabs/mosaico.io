@@ -85,6 +85,6 @@ Also the way of **handling shorthand could bring some problem**: in css properti
 There are also some minor issues, *like if inlining or not !important and html refactoring, indentation and newline insertion*, but the amazing thing is the **number of bugs and potential issues of many inliners**: **MailerMailer**, just to make an example, **cannot process correcty css with quotes** (like url('myurl')) or base64, breaking up the whole template.
 Other issues are more subtle, like **casual reorders**, or bad assumption in **property splitting, or value parsing**, that could break special trick and more.
 
-So, inliner is the **final chain of your email design process**: choose it wisely, by now we reccomend, without any doubt, [Litmus Putsmail](https://putsmail.com/inliner), whe think that it has the **right approach**, granting good **preservation of styling** at the price of some verbosity of the final code.
+So, inliner is the **the last step in your email design process**: choose it wisely, by now we reccomend, without any doubt, [Litmus Putsmail](https://putsmail.com/inliner), whe think that it has the **right approach**, granting good **preservation of styling** at the price of some verbosity of the final code.
 
 
