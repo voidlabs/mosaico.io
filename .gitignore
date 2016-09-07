@@ -8,3 +8,6 @@ build
 dist
 _site
 .sass-cache
+frontpage/.DS_Store
+
+.DS_Store
