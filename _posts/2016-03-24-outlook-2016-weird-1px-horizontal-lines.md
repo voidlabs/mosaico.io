@@ -88,3 +88,7 @@ I then **opened a Mailchimp** account and created a **template using their drag 
 ## So, it's not my HTML, it's Outlook 2016
 
 Now I cannot give you a solution. I can tell you that the issue is reproducible: the same code produces the same lines. But you change something at the bottom of your email and you see lines appearing or disappearing at the top of the email.
+
+### Updates September 2016
+
+As emerged from [Litmus discussion](https://litmus.com/community/discussions/4990-outlook-2016-1px-horizontal-lines-showing-up-in-the-body?utm_swu=1756#%23comment-8961), Microsoft on a [Technet discussion](https://social.technet.microsoft.com/Forums/office/en-US/1f4f1e03-8ad5-4079-bc18-8fcaaa7b785d/outlook-2016-renders-horizontal-lines-seemingly-randomly-in-html-emails?forum=Office2016ITPro) on the same strange behaviour, informally states that *"this is actually a known issue, and still under investigation in production group"*. 
