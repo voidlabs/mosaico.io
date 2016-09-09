@@ -133,7 +133,7 @@ p {
     color: white
 }
 .text-faded {
-    color: fade-out(white, 0.8);
+    color: fade-out(white, 0.3);
 }
 
 section, aside {
@@ -264,7 +264,7 @@ header {
             }
             p {
                 font-weight: 300;
-                color: fade-out(white, 0.7);
+                // color: fade-out(white, 0.7);
                 font-size: 25px;
                 margin-bottom: 50px;
                 color:#900000;
@@ -309,6 +309,7 @@ header {
         color: #eee;
         text-shadow: 0px 0px 20px rgba(30,30,0,1);
         font-size: 50px;
+        margin: 40px 0;
     }
     .btn-primary {
         color: #222;
@@ -743,17 +744,18 @@ body {
 .panel-body {
     padding: 15px 0px 10px 00px;
 }
-.breadcrumb{
+.breadcrumb {
     background-color:transparent !important;
     padding-left:0px !important;
 }
+
+/*
 .table {
     font-size:0.7em;
     @include sans-serif-font;
-  
-
-
 }
+*/
+
 .td-green {background-color:#090 !important}
 .td-red {background-color:#c80000 !important}
 .td-orange {background-color:#FFA500 !important}
