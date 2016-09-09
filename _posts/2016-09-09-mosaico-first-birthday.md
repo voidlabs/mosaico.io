@@ -18,8 +18,8 @@ In these months our **blog** has pointed out some interesting news - and **email
 
 The traffic on **Mosaico.io** is growing day by day and **tens of thousands of email template** have been created with our free editor: we are planning some **new feature on the site**, so keep an eye on it!
 
-A full year has passed and Mosaico proved to be stable and solid, so we are now ready to publish the **MOSAICO commercial version**: the open source project (under GPL licensing) is here to stay, but for those who can't accept GPLv3 requirements or need **professional support**, now we have a solution.
+A full year has passed and Mosaico proved to be stable and solid, so we are now ready to publish the **MOSAICO commercial edition**: the open source project (under GPL licensing) is here to stay, but for those who can't accept GPLv3 requirements or need **professional support**, now we have a solution.
 
-Check out the brand new page of **[MOSAICO Commercial Version](http://mosaico.io/commercial/)**!
+Check out the brand new page of **[MOSAICO Commercial Edition](http://mosaico.io/commercial/)**!
 
 So, a brand new Mosaico year is coming, **brace yourself**!
