@@ -133,7 +133,7 @@ p {
     color: white
 }
 .text-faded {
-    color: fade-out(white, 0.7);
+    color: fade-out(white, 0.8);
 }
 
 section, aside {
@@ -306,8 +306,14 @@ header {
     hr { display: none }
     p {
         text-transform: uppercase;
-        color: white;
+        color: #eee;
+        text-shadow: 0px 0px 20px rgba(30,30,0,1);
         font-size: 50px;
+    }
+    .btn-primary {
+        color: #222;
+        background-color: #f2f2f2;
+        border-color: #ededed;
     }
 }
 
