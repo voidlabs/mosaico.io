@@ -249,7 +249,7 @@ header {
         text-align: center;
 
         background-color: rgba(230, 220, 200, 0.4);
-        padding: 70px 15px;
+        padding: 120px 15px 70px 15px;
 
         width: 100%;
         .header-content-inner {
@@ -257,27 +257,17 @@ header {
                 @include sans-serif-font;
                 text-transform: uppercase;
                 color: #eee;
+                font-weight: 700;
                 text-shadow: 0px 0px 20px rgba(30,30,0,.5);
                 margin: 40px 0;
             }
-            hr {
-                margin: 30px auto;
-            }
-            p {
-                font-weight: 300;
-                // color: fade-out(white, 0.7);
-                font-size: 25px;
-                margin-bottom: 50px;
-                color:#900000;
-                            }
-            
-
         }
     }
     @media (min-width: 900px) {
         min-height: 100%;
         .header-content {
             position: absolute;
+            padding: 70px 15px;
             top: 50%;
             -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
@@ -285,22 +275,8 @@ header {
            
             .header-content-inner {
                 .logoWrapper { display:table }
-                p {
-                    font-size: 32px;
-                    max-width: 100%;
-                    margin-left: auto;
-                    margin-right: auto;
-                    color:#900000;
-                }
             }
         }
-    }
-}
-
-body header {
-    .header-content {
-
-
     }
 }
 
