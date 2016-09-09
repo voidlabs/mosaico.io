@@ -312,9 +312,12 @@ header {
             text-transform: uppercase;
             color: #eee;
             text-shadow: 0px 0px 30px rgba(30,30,0,.5);
-            font-size: 50px;
             margin: 40px 0;
+            strong {
+                font-size: 150%;
+            }
         }
+
         .btn-primary {
             color: #222;
             background-color: #f2f2f2;
@@ -716,13 +719,15 @@ body {
 //forzatura del bottone menu
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #ddd;
+  background-color: transparent;
 }
 .navbar-default .navbar-toggle {
-    border-color: #ddd;
-    }
+    border-color: transparent;
+}
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #888;
+    background-color: #444;
+    height: 3px;
+    font-weight: bold;
 }
 
 //posts category
