@@ -305,7 +305,10 @@ header {
 //    background-blend-mode: screen;
   
     .header-content {
-        background-color: rgba(230, 220, 200, 0.3);
+
+        background-color: rgba(230, 220, 200, 0.4);
+        padding: 70px 15px;
+
         hr { display: none }
         p {
             @include sans-serif-font;
