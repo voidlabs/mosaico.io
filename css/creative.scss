@@ -306,7 +306,9 @@ header {
     }
 }
 
-
+header.commercial-bg{
+    background-image: url('../frontpage/img/header-commercial.jpg');
+}
 
 
 // Sections
@@ -731,6 +733,9 @@ body {
 .table {
     font-size:0.7em;
     @include sans-serif-font;
+  
+
+
 }
 .td-green {background-color:#090 !important}
 .td-red {background-color:#c80000 !important}
@@ -751,4 +756,33 @@ body {
     
     .adtable th:first-child, .adtable td:first-child, .adtable td:first-child { display: none; }
     
-
+.commercial {
+    thead th{ border-bottom: 3px solid $theme-primary !important;}
+    tbody td, tbody th{ border-bottom: 1px solid #ecf0f1 !important;}
+}
+.price {
+    th,td{text-align:right;padding-right:1em}
+}
+  
+ @media (max-width: 480px) {
+.table-gplcommercial {
+  thead {
+    display: none;
+  }  
+  tr {
+    th, td {
+      display: block;
+    }
+    td:before {
+      display: inline-block;
+      margin: 0 .5em;
+      &:nth-child(2) {
+        content: "GPL: ";
+      }
+      &:nth-child(3) {
+        content: "Commercial: ";
+      }
+    }
+  }
+}
+}
