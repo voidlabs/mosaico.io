@@ -1,0 +1,22 @@
+ @media (max-width: 480px) {
+.table-gplcommercial {
+  thead {
+    display: none;
+  }  
+  tr {
+    th, td {
+      display: block;
+    }
+    td:before {
+      display: inline-block;
+      margin: 0 .5em;
+      &:nth-child(2) {
+        content: "GPL: ";
+      }
+      &:nth-child(3) {
+        content: "Commercial: ";
+      }
+    }
+  }
+}
+}

@@ -809,13 +809,14 @@ body {
     td:before {
       display: inline-block;
       margin: 0 .5em;
-      &:nth-child(2) {
+      
+    }
+    td:nth-child(2):before {
         content: "GPL: ";
       }
-      &:nth-child(3) {
+    td:nth-child(3):before {
         content: "Commercial: ";
       }
-    }
   }
 }
 }
