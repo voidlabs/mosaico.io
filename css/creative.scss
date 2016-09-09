@@ -247,16 +247,18 @@ header {
     .header-content {
         position: relative;
         text-align: center;
-        padding: 100px 15px 100px;
-        background-color: rgba(230,220,200,0.5);
+
+        background-color: rgba(230, 220, 200, 0.4);
+        padding: 70px 15px;
+
         width: 100%;
         .header-content-inner {
             h1 {
-                font-weight: 700;
+                @include sans-serif-font;
                 text-transform: uppercase;
-                margin-top: 0;
-                margin-bottom: 0;
-
+                color: #eee;
+                text-shadow: 0px 0px 20px rgba(30,30,0,.5);
+                margin: 40px 0;
             }
             hr {
                 margin: 30px auto;
@@ -281,13 +283,8 @@ header {
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
            
-            padding-top: 50px;
-            padding-bottom: 50px;
-      
             .header-content-inner {
-               
-               
-                 .logoWrapper { display:table}
+                .logoWrapper { display:table }
                 p {
                     font-size: 32px;
                     max-width: 100%;
@@ -300,33 +297,10 @@ header {
     }
 }
 
-.test header {
-//    background-color: #444;
-//    background-blend-mode: screen;
-  
+body header {
     .header-content {
 
-        background-color: rgba(230, 220, 200, 0.4);
-        padding: 70px 15px;
 
-        hr { display: none }
-        p {
-            @include sans-serif-font;
-            text-transform: uppercase;
-            color: #eee;
-            text-shadow: 0px 0px 30px rgba(30,30,0,.5);
-            margin: 40px 0;
-            strong {
-                font-size: 150%;
-            }
-        }
-
-        .btn-primary {
-            color: #222;
-            background-color: #f2f2f2;
-            border-color: #ededed;
-//            box-shadow: 0px 0px 30px rgba(30,30,0,1);
-        }
     }
 }
 
@@ -586,8 +560,8 @@ body {
     .header-content {
         position: relative;
         text-align: center;
-        padding: 80px 15px 30px;
-         background-color: rgba(230,220,200,0.5);
+        padding: 80px 15px;
+        background-color: rgba(230,220,200,0.5);
         width: 100%;
         .header-content-inner {
             h2 { @include serif-font;
