@@ -305,7 +305,7 @@ header {
 //    background-blend-mode: screen;
   
     .header-content {
-//        background-color: transparent;
+        background-color: rgba(230, 220, 200, 0.3);
         hr { display: none }
         p {
             @include sans-serif-font;
