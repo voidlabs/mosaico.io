@@ -301,20 +301,27 @@ header {
     }
 }
 
-.test header .header-content {
-    background-color: transparent;
-    hr { display: none }
-    p {
-        text-transform: uppercase;
-        color: #eee;
-        text-shadow: 0px 0px 20px rgba(30,30,0,1);
-        font-size: 50px;
-        margin: 40px 0;
-    }
-    .btn-primary {
-        color: #222;
-        background-color: #f2f2f2;
-        border-color: #ededed;
+.test header {
+    background-color: #444;
+    background-blend-mode: screen;
+  
+    .header-content {
+        background-color: transparent;
+        hr { display: none }
+        p {
+            @include sans-serif-font;
+            text-transform: uppercase;
+            color: #eee;
+            text-shadow: 0px 0px 30px rgba(30,30,0,1);
+            font-size: 50px;
+            margin: 40px 0;
+        }
+        .btn-primary {
+            color: #222;
+            background-color: #f2f2f2;
+            border-color: #ededed;
+            box-shadow: 0px 0px 30px rgba(30,30,0,1);
+        }
     }
 }
 
