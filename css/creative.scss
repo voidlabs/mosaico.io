@@ -53,13 +53,12 @@
 }
 
 @mixin sans-serif-font() {
-    
     font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", Arimo, sans-serif;
 }
-
 @mixin serif-font() {
-    font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Merriweather', Georgia, serif;
 }
+
 @mixin image-responsive() {
     max-width: 100%;
 }
