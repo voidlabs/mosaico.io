@@ -3,7 +3,6 @@ layout: post
 title:  MOSAICO first birthday!
 date:   2016-09-09 12:00:00
 categories: news
-draft: yes
 ---
 
 Yes, today **MOSAICO grows up**: exactly one year ago, we released the **first version of MOSAICO code on GitHub**.
