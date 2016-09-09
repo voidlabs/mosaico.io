@@ -10,6 +10,8 @@ Yes, today **MOSAICO grows bigger**: exactly one year ago, we released the **fir
 
 We always thought that **MOSAICO would be a "game changer"** in email template design: for the first time a complete and functional responsive email editor has been **released as an open source project**.
 
+![Happy Birthday](/assets/images/happybirthday.jpg)
+
 Since then we walked far, and by now **MOSAICO** project has gain **over 400 stars and 140 forks on GitHub**, growing day by day.
 <!--more-->
 Just few days ago a new version of the code **(0.15)** was released, with a **real major improvement**: now the **CSS inlining process** - a key in email compatibility - is made **directly by MOSAICO**.
