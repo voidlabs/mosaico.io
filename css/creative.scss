@@ -74,7 +74,7 @@ body {
 }
 
 body {
-    @include serif-font;
+    @include sans-serif-font;
 }
 
 hr {
@@ -102,7 +102,7 @@ h3,
 h4,
 h5,
 h6 {
-    @include sans-serif-font;
+    @include serif-font;
 }
 
 p {
@@ -371,7 +371,7 @@ header.commercial-bg{
             transform: translateY(-50%);
             .project-category,
             .project-name {
-                @include sans-serif-font;
+                @include serif-font;
                 padding: 0 15px;
             }
             .project-category {
@@ -535,7 +535,7 @@ body {
     width: 100%;
     background-color: white;
     color: black;
-    @include sans-serif-font;
+    // @include sans-serif-font;
     thead{text-align:center;
           background-color:$theme-primary;color:white;}
     th{padding:5px;text-align:center}
