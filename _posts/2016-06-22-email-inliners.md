@@ -86,4 +86,4 @@ Other issues are more subtle, like **casual reorders**, or bad assumption in **p
 
 So, inliner is the **the last step in your email design process**: choose it wisely, by now we reccomend, without any doubt, [Litmus Putsmail](https://putsmail.com/inliner), whe think that it has the **right approach**, granting good **preservation of styling** at the price of some verbosity of the final code.
 
-
+**UPDATE 10 Sep 2016**: Juice just [released their 3.0 version](https://github.com/Automattic/juice/releases/tag/v3.0.0) with many contribution from @bago (Mosaico developer) and this fixes a lot if Juice issues explored in this article and bring it at the same level of Litmus inliner.
