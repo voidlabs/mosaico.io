@@ -2,7 +2,7 @@
 title: Mosaico.io News and Blog
 email: info@mosaico.io
 description: > # News from Mosaico Template Editor.
-baseurl: '' # the subpath of your site, e.g. /blog/
+baseurl: '/.' # the subpath of your site, e.g. /blog/
 url: "http://mosaico.io" # the base hostname & protocol for your site
 #staticurl: "http://gh.mosaico.io"
 staticurl: "https://voidlabs.github.io/mosaico.io"
