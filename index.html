@@ -23,7 +23,7 @@ function myCallback(hypeDocument, element, event) {
         <div class="header-content">
             <div class="header-content-inner">
                 <div class="hider">
-                    <table class="logoWrapper" valign="bottom" align="center"><tr><td valign="bottom"><img class="logoImage" alt="Mosaico.io" style="display: block;" src="{{site.staticurl}}{{site.baseurl}}/assets/images/mosaicologo.png" /><div class="logoContainerBig"></div></td></tr></table>
+                    <table class="logoWrapper" valign="bottom" align="center"><tr><td valign="bottom"><img class="logoImage" alt="Mosaico.io" style="display: block;" src="{{site.staticurl}}/assets/images/mosaicologo.png" /><div class="logoContainerBig"></div></td></tr></table>
                     <h1>Open Source Email Template Builder</h1>
                 </div>
                 <div id="animazionemosaico_hype_container" style="margin:auto;position:relative;width:600px;height:400px;overflow:hidden;margin-bottom:30px" aria-live="polite">
@@ -49,7 +49,7 @@ function myCallback(hypeDocument, element, event) {
                   <div class="template template-xx" style="" data-bind="attr: { class: 'template template-'+name }">
                     <div class="description" style="padding-bottom:5px"><b data-bind="text: name">xx</b>: <span data-bind="text: desc">xx</span></div>
                     <a href="#"  data-bind="click: $root.newEdit.bind(undefined, name), attr: { href: 'editor.html?{{site.mosaico_version}}#templates/'+name+'/template-'+name+'.html' }">
-                      <img src width="100%" alt="xx" data-bind="attr: { src: '{{site.baseurl}}/templates/'+name+'/edres/_full.png' }">
+                      <img src width="100%" alt="xx" data-bind="attr: { src: '{{site.basepath}}/templates/'+name+'/edres/_full.png' }">
                     </a>
                     
                   </div>

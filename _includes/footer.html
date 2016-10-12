@@ -11,20 +11,20 @@
    
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="{{site.staticurl}}{{site.baseurl}}/frontpage/js/bootstrap.min.js"></script>
+    <script src="{{site.staticurl}}/frontpage/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="{{site.staticurl}}{{site.baseurl}}/frontpage/js/jquery.easing.min.js"></script>
-    <script src="{{site.staticurl}}{{site.baseurl}}/frontpage/js/wow.min.js"></script>
+    <script src="{{site.staticurl}}/frontpage/js/jquery.easing.min.js"></script>
+    <script src="{{site.staticurl}}/frontpage/js/wow.min.js"></script>
      {% if page.custom_css %}
   {% for stylesheet in page.custom_css %}
-  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/{{ stylesheet }}.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="{{site.basepath}}/assets/css/{{ stylesheet }}.css" media="screen" type="text/css">
   {% endfor %}
 {% endif %}
 
 {% if page.custom_js %}
   {% for js_file in page.custom_js %}
-  <script src='{{site.staticurl}}{{site.baseurl}}/assets/script/{{ js_file }}.js' type="text/javascript"></script>
+  <script src='{{site.staticurl}}/assets/script/{{ js_file }}.js' type="text/javascript"></script>
   {% endfor %}
 {% endif %}
 <script>
@@ -58,7 +58,7 @@ $('[data-toggle="tooltip"]').tooltip();
 
 </script>
     <!-- Custom Theme JavaScript -->
-    <script src="{{site.staticurl}}{{site.baseurl}}/frontpage/js/creative.js"></script>
+    <script src="{{site.staticurl}}/frontpage/js/creative.js"></script>
     <script>
     var makeMosaicoTable = function(idtable) {
       var data = [
@@ -99,5 +99,5 @@ $('[data-toggle="tooltip"]').tooltip();
     });
     // $('<hr/>').appendTo($('body'));
     </script>
-    <script src="{{site.baseurl}}/srv/config.js"></script>
+    <script src="{{site.basepath}}/srv/config.js"></script>
 </body>

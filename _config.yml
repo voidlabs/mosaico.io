@@ -2,15 +2,14 @@
 title: Mosaico.io News and Blog
 email: info@mosaico.io
 description: > # News from Mosaico Template Editor.
-baseurl: '/.' # the subpath of your site, e.g. /blog/
-url: "http://mosaico.io" # the base hostname & protocol for your site
-#staticurl: "http://gh.mosaico.io"
+# url: "http://mosaico.io" # the base hostname & protocol for your site
+fullcanonicalurl: "https://mosaico.io"
 staticurl: "https://voidlabs.github.io/mosaico.io"
-#staticurl: "http://0.0.0.0:4000"
+basepath: "" # used for host-relative paths
 description: "Mosaico is the first open source email template editor proudly brought to you by VOXmail: it is powerful and free! The email template builder supports responsive design and live wysiwyg editing."
 keywords: "responsive email designer, email editor, free email builder, email template creator, open source mail editor, newsletter editor, template builder"
 titlepostfix: " | Mosaico.io"
-mosaico_version: 0.14
+mosaico_version: 0.15
 google_analytics_id: UA-61367795-1
 twitter_username: mosaicoeditor
 github_username:  bago

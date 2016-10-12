@@ -5,7 +5,7 @@
          
           {% for category in site.categories %}
           <li class="list-group-item">
-              <a class="catelink" href="{{ site.baseurl }}/{{category.first}}" >
+              <a class="catelink" href="{{ site.basepath }}/{{category.first}}" >
                   {{ category.first | replace:'-',' ' }}&nbsp;<span class="badge">{{ category.last.size }}</span>
               </a>
           </li> 
