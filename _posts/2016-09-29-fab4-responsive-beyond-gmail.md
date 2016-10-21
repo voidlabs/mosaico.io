@@ -97,8 +97,11 @@ On both Gmail version (IOS and Webmail mobile) **Fab4 technique works well**.
 
 ### Results
 As said before, **Fab 4** technique is born mainly to go beyond **"old" Gmail limits**, and give a proper responsive email version also on non media query compatible webmail and clients.
+
 With brand new **Gmail media query support** this need seems to be outdated, but so far **transition is still uncomplete** and there are also **many local webmail that are incompatible with media query**.
+
 So **Fab4 could be a nice option**, if you are mostly **mobile-oriented**: this method renders **slightly better** in mobile versions than Spongy/Hybrid technique (not so much, by the way), anyways you have also to consider that **Spongy/Hybrid technique** seems to react in a **more solid way** with "problematic" clients and webmails.
+
 So, as always, before embracing a new technique consider always the downside of this kind of operation.
 
 
