@@ -5,7 +5,7 @@ date:   2017-04-06 12:00:00
 categories: news
 ---
 
-**[Mailtrain](https://mailtrain.org)** defines itself as *"Self Hosted Newsletter App Built on Top of Nodemailer"*: it's an open source project, born in 2016, meant to be an alternative to **commercial ESP** for whom who prefer a **self hosted service**, with complete control on the software beneath.
+**[Mailtrain](https://mailtrain.org)** defines itself as *"Self Hosted Newsletter App Built on Top of Nodemailer"*: it's an open source project, born in 2016, meant to be an alternative to **commercial ESP** to who prefer a **self hosted service**, with complete control on the software beneath.
 ![Mailtrain and Mosaico!](/assets/images/mailtrain.png)
 
 Mailtrain has grown a lot in the past year, and has a fairly huge fanbase (**over 1.300 stars on GitHub**): its ambitious roadmap includes not only the basic newsletter send features (*list management, custom fields, list segmentation, bounce analysis*...) but also a number of advanced tools, like **RSS campaigns, GPG Encryption, Automation**.
