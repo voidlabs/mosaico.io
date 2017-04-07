@@ -19,4 +19,4 @@ A few days ago we received the Mailtrain Announcement newsletter and, guess what
 
 **Mailtrain** is a young project, but is growing fast so we are happy and proud to be part of this project: test it and let us know what's your opinion.
 
-*(\*) before you get too excited for GrapesJS as an email editor we suggest to read a [couple](https://github.com/Mailtrain-org/mailtrain/issues/10#issuecomment-270751979) of [comments](https://github.com/Mailtrain-org/mailtrain/issues/10#issuecomment-270931061) on why GrapesJS is a great tool but not yet ready for the real world email templates requiring dozens of html hacks*
+*(\*) before you get too excited for GrapesJS as an email editor we suggest to read a [couple](https://github.com/Mailtrain-org/mailtrain/issues/10#issuecomment-270751979) of [comments](https://github.com/Mailtrain-org/mailtrain/issues/10#issuecomment-270931061) on why we think GrapesJS is a great tool but not yet ready for the real world email templates requiring dozens of html hacks*
