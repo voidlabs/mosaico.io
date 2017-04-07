@@ -17,6 +17,6 @@ An year later **[Roger Witzig](https://github.com/witzig)** contributed [the cod
 
 A few days ago we received the Mailtrain Announcement newsletter and, guess what? it was **beautiful**, fully **responsive**, sent by Mailtrain itself and.... **designed with Mosaico**.
 
-**Mailtrain** is a young project, but is growing fast so we are happy and proud to be part of this project: test it and let us know what's your opinion.
+**Mailtrain** is a young project, but is growing fast so we are happy and proud to be part of this project. Starting from [v1.23.0](https://github.com/Mailtrain-org/mailtrain/releases/tag/v1.23.0) release it includes Mosaico: test it and let us know what's your opinion.
 
 *(\*) before you get too excited for GrapesJS as an email editor we suggest to read a [couple](https://github.com/Mailtrain-org/mailtrain/issues/10#issuecomment-270751979) of [comments](https://github.com/Mailtrain-org/mailtrain/issues/10#issuecomment-270931061) on why we think GrapesJS is a great tool but not yet ready for the real world email templates requiring dozens of html hacks*
