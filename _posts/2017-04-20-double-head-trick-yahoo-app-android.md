@@ -49,4 +49,4 @@ I tried adding styles to both "heads" and clients supporting non-inline styles w
 
 *Disclaimer*: using 2 head tags makes your HTML "malformed". Do you care? Also using the style tag in the body was invalid.
 
-(*) **Remember**: the best single page resource for updated email rendering issues in 2017 is **[FreshInbox](http://freshinbox.com/resources/css.php)**. Most of other pages around are simply outdated and keeps telling you to use uppercase Margin or [class] selectors. Don't be confused by the "kinetic" titles, *it is a great resource even if you don't care about kinetic emails*.
+(\*) **Remember**: the best single page resource for updated email rendering issues in 2017 is **[FreshInbox](http://freshinbox.com/resources/css.php)**. Most of other pages around are simply outdated and keeps telling you to use uppercase Margin or [class] selectors. Don't be confused by the "kinetic" titles, *it is a great resource even if you don't care about kinetic emails*.
