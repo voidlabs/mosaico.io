@@ -28,7 +28,7 @@ This is a known bug [documented](https://github.com/hteumeuleu/email-bugs/issues
 
 So **we are not surprised** our link is not red on yellow, but **look at** how Outlook.com renders **the "Third paragraph"** for the previous code:
 
-![Outlook.com moving styles](/assets/images/outlook-a-no-href-issue-crop.png)
+![Outlook.com moving styles](/assets/images/outlook-a-no-href-issue.png)
 
 It sounds like an almost "random" element in the page **will get the styles once belonging to your "unlinked" link**.
 
