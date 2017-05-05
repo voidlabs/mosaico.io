@@ -3,7 +3,6 @@ layout: post
 title:  "That weird style issue in Outlook/Office365"
 date:   2017-05-05 11:20:21
 categories: email-client-tricks
-draft: true
 ---
 
 When Outlook.com/Office365 find an A tag without the HREF or with an empty HREF or an HREF with the value "#" then it will get very upset and will remove the link tag.
