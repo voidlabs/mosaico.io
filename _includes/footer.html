@@ -50,6 +50,7 @@ $(window).load(updateTables);
 function splitTable(original){original.wrap("<div class='table-wrapper' />");
 var copy=original.clone();copy.find("td:not(:first-child), th:not(:first-child)").css("display","none");
 copy.removeClass("resptable");
+copy.removeClass("responsivetable");
 copy.removeClass("resptable2");
 original.closest(".table-wrapper").append(copy);
 copy.wrap("<div class='pinned' />");original.wrap("<div class='scrollable' />");
