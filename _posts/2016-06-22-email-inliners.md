@@ -3,7 +3,7 @@ layout: post
 title:  The Perfect Email CSS Inliner
 date:   2016-06-22 07:00:00
 categories: email-client-tricks
-class: advtable2
+class: resptable2
 ---
 
 In order to make emails and email templates **compatible with most of the clients and webmails** out there, we know that we have to avoid at most everything that is not pure **inline css1 style**.
