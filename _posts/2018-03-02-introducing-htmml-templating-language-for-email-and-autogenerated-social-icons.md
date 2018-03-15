@@ -12,6 +12,7 @@ A major design choice in the "template language" was that the template language 
 This is a **major advantage when you have a master template with few options**, but you'll find repeating and copy and pasting a lot of html code if you want to create a full featured master template like our Versafix.
 
 The repeating and copy and pasting tasks usually get you to more bugs, so while we updated our Versafix master template **we decided to build a small generation tool to help with "deduplication" and maintenance**.
+<!--more-->
 
 # HTMML, the Hyper Text META Markup Language
 
