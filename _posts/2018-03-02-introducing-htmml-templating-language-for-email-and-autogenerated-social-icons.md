@@ -3,7 +3,6 @@ layout: post
 title:  Introducing HTMML and icon generation tool to improve master templates maintenance
 date:   2018-03-02 18:00:00
 categories: news
-draft: true
 ---
 
 One of the strengths of Mosaico is its template-based approach. Most options Mosaico gives you when you edit a template are **not hardcoded in the Mosaico Library**. Instead, they are **defined in the "master template"**, by the template author.
