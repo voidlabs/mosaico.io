@@ -15,7 +15,7 @@ We followed the suggestions, but before we detail the improvements, we want to l
 - **forward compatible**: any email model saved against the versafix 1.0.x master template can been loaded by the new versafix 1.1.x master template and enhanced with the new options.
 - **requires no changes to the library**: we wanted the new template to be deployed also on older mosaico releases (0.14.0+ is known to handle the template correctly).
 
-# New & Noteworthy in Versafix 1.1.16
+# New & Noteworthy in 1.1.16
 
 ### New alignment option for titles, paragraphs and buttons
 
@@ -46,6 +46,8 @@ We followed the suggestions, but before we detail the improvements, we want to l
 ![Social share block](/assets/images/versafix-1.1-social-share.png)
 
 ### HTML output fully revamped
+
+The improvements above were introduced in 1.1.0 release. Then it tooks 16 releases (to 1.1.16) to deal with email clients specific issues :-)
 
 We introduced new "**hybrid hacks**" ([responsive + spongy + calc](https://mosaico.io/email-client-tricks/fab4-responsive-beyond-gmail/)) to **improve compatibility with most email clients** and to **improve responsive behaviour on email clients not supporting CSS media queries**.
 
