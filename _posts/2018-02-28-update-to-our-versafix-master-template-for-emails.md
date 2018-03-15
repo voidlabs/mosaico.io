@@ -10,6 +10,7 @@ Mosaico flagship master template is named **Versafix-1** and the current version
 *In the past 2 years we analized how people used Versafix, what were the most commonly altered styles and collected a lot of feedback and feature requests!*
 
 We followed the suggestions, but before we detail the improvements, we want to let you know the basics:
+<!--more-->
 
 - **forward compatible**: any email model saved against the versafix 1.0.x master template can been loaded by the new versafix 1.1.x master template and enhanced with the new options.
 - **requires no changes to the library**: we wanted the new template to be deployed also on older mosaico releases (0.14.0+ is known to handle the template correctly).
