@@ -3,7 +3,6 @@ layout: post
 title:  A due update to our "versafix" master template
 date:   2018-02-28 18:00:00
 categories: news
-draft: true
 ---
 
 Mosaico flagship master template is named **Versafix-1** and the current version (1.0.6) is used by thousands of users around the world, every day, to create effective and responsive emails.
