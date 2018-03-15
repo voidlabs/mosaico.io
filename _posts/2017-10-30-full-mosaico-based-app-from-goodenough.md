@@ -12,6 +12,7 @@ categories: news
 The [project repository](https://github.com/goodenough/mosaico-backend) **started as a Mosaico fork**, but in fact **we now see it as an application that depends on Mosaico**. We are working with GoodEnough so to let their customization being developed as plugins instead of altering the main code, so it will be easier to keep up with new Mosaico releases.
 
 The App has a very good looking **material design** and is very easy to use and you can easily **appreciate their UX skills**!
+<!--more-->
 
 ### Deploy to Heroku+AWS in minutes
 
