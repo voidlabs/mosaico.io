@@ -3,7 +3,6 @@ layout: post
 title:  Full Mosaico-based email template authoring app from the community
 date:   2017-10-30 12:00:00
 categories: news
-draft: true
 ---
 
 ### A full web application
