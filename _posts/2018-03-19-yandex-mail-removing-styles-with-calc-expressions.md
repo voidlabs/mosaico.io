@@ -49,3 +49,7 @@ is cleaned up by Yandex to this:
 So, this issue makes the [Fab4 technique](https://mosaico.io/email-client-tricks/fab4-responsive-beyond-gmail/) ineffective without additional hacks.
 
 We [documented the bug](https://github.com/voidlabs/versafix-template/issues/1) in the versafix-1 repository. We'll try some additional hack to see if we can get the desktop version on Yandex even if partially using the Fab4 approach.
+
+Unfortunately we're not aware of known hacks to target Yandex.com webmail so to put some specific workaround in place, so we'll need a generic solution and something that doesn't break any other email client.
+
+Did you experience this bug? How did you fix it? Do you have more details about the issue? Get in touch with us!
