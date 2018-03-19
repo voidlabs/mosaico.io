@@ -2,7 +2,7 @@
 layout: post
 title:  Yandex.com removes full style attribute on unexpected contents
 date:   2018-03-19 14:00:00
-categories: news
+categories: email-client-tricks
 ---
 
 We've had reports that our latest [versafix-1 template](https://github.com/voidlabs/versafix-template/releases/tag/v1.1.16) (1.1.16) shows its **mobile version on Yandex webmail even on desktop**.
