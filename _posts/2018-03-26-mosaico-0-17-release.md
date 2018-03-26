@@ -17,8 +17,8 @@ Let's see the changes...
 
 ### Final User changes/improvements
 
-- **Updated versafix-1 to 1.1.16 with new blocks anew new options**: [see release notes](/news/update-to-our-versafix-master-template-for-emails/)
-- Added image tool on Editbale images that by default opens the gallery (overridable via viewModel plugin)
+- **Updated versafix-1 to 1.1.16 with new blocks and new formatting options**: [see release notes](/news/update-to-our-versafix-master-template-for-emails/)
+- Added image tool on "editable images" that by default opens the gallery (overridable via viewModel plugin)
 - New outline on editable elements when hovering a block
 - Prevent editing contents while tinymce is being loaded (fading effect)
 - Use inline-block with a min-width for inline editables + hacks to prevent element collapsing
