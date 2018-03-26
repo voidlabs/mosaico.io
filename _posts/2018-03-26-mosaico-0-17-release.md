@@ -15,7 +15,7 @@ On the other side **it took 4 iterations to have our first 0.17.x stable release
 Let's see the changes...
 <!--break-->
 
-### Final User changes/improvements
+## Final User changes/improvements
 
 - **Updated versafix-1 to 1.1.16 with new blocks and new formatting options**: [see release notes](/news/update-to-our-versafix-master-template-for-emails/)
 - Added image tool on "editable images" that by default opens the gallery (overridable via viewModel plugin)
@@ -23,7 +23,7 @@ Let's see the changes...
 - Prevent editing contents while tinymce is being loaded (fading effect)
 - Use inline-block with a min-width for inline editables + hacks to prevent element collapsing
 
-### Developers/Integrators changes:
+## Developers/Integrators changes:
 
 - Added Russian, Serbian and Portuguese language packs
 - Added decodeURI, encodeURI, decodeURIComponent and encodeURIComponent to functions available to template authors.
