@@ -10,7 +10,10 @@ It's been a while since our previous release but it turned out **Mosaico is pret
 
 On the other side **it took 4 iterations to have our first 0.17.x stable release**, namely the 0.17.3, because of unexpected issues with the newer version of our dependency TinyMCE and because of bugs in Safari rendering engine (WebKit).
 
-Here are the changes
+![Mosaico 0.17](/assets/images/mosaico-0.17.png)
+
+Let's see the changes...
+<!--break-->
 
 ### Final User changes/improvements
 
