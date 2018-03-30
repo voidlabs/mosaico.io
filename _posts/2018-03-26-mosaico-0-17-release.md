@@ -3,7 +3,6 @@ layout: post
 title:  Mosaico 0.17.3 release
 date:   2018-03-26 14:00:00
 categories: news
-draft: true
 ---
 
 It's been a while since our previous release but it turned out **Mosaico is pretty stable/solid** and easy to extend via plugins!
