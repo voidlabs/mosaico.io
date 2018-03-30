@@ -29,3 +29,5 @@ Let's see the changes...
 - Compatibility with jQuery up to latest 3.3 (using jQuery-Migrate), we suggest upgrading to jQuery 3.3, Knockout 3.4.2, TinyMCE 4.5.x (MAY work with 4.6.x, still have ISSUES with 4.7.x)
 - **Major build refactoring** to remove bower and **improve build reproducibility** over time when using npm v5 (previous releases are not anymore buildable because of bower and no package.lock mechanisms in older npm).
 - A bunch of minor bug fixes
+
+Go, check out [Mosaico 0.17.3](https://github.com/voidlabs/mosaico/releases/tag/v0.17.3) and join the community!
