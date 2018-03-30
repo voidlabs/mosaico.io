@@ -30,4 +30,4 @@ Let's see the changes...
 - **Major build refactoring** to remove bower and **improve build reproducibility** over time when using npm v5 (previous releases are not anymore buildable because of bower and no package.lock mechanisms in older npm).
 - A bunch of minor bug fixes
 
-Go, check out [Mosaico 0.17.3](https://github.com/voidlabs/mosaico/releases/tag/v0.17.3) and join the community!
+Go, **check out [Mosaico 0.17.3](https://github.com/voidlabs/mosaico/releases/tag/v0.17.3)** and join the community!
