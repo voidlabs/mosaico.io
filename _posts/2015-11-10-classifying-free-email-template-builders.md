@@ -17,7 +17,7 @@ When you use a **free tool** it may help to understand what's the plan to *monet
 
 - some other tools are provided for free with the hope **you will buy commercial templates**: [Stamplia](https://builder.stamplia.com) and [MailSalad](https://www.mailsalad.com/) do this
 
-- some other tools are free as in freemium, so a free version exists to let people know **the commercial version**: [Responsizer](http://www.responsizer.com/), [BeeFree](http://www.beefree.io/), [EdmDesigner](http://edmdesigner.com) and partly [Mosaico](http://mosaico.io) belongs to this group
+- some other tools are free as in freemium, so a free version exists to let people know **the commercial version**: [Responsizer](http://www.responsizer.com/), [BeeFree](http://www.beefree.io/), [EdmDesigner](https://edmdesigner.com/), [Chamaileon.io](https://chamaileon.io/) and partly [Mosaico](http://mosaico.io) belongs to this group
 
 Being the only **opensource** product, *Mosaico* has a special position in this categorization: of course we hope to make some money by providing **Commercial Support** for Mosaico but we mainly opensourced it with the hope to create a **community** around it.
 
@@ -36,11 +36,11 @@ Most editors belonging to this category publish a **"template language"** to let
 
 *Stamplia* and *MailSalad* have a **simpler** template language than *Mosaico*: this means that it is easier to create templates for Stamplia or MailSalad but the resulting template will be **less customizable**. Mosaico gives much more power (*and responsibilities*) to template developers.
 
-**Built-in html structure**: many editors prefer to use an *"hardcoded"* html structure. This usually means that you can't use **customized templates** but only some "layout" provided by the editor itself.
+**Built-in html structure**: many editors prefer to use an *"hardcoded"* html structure. This usually means that you can't use **customized HTML code** but only some "layout" provided by the editor itself. The major restrictions are usually the template width (regurarly 600px) and email-client-specific restrictions, for example additional codes for Outlook clients, Yahoo, etc.
 
-*Responsizer, BeeFree, EdmDesigner and FreeEmailEditor* fall in this group. This approach usually make it easier to create a **powerful editor with many customization options**, but this "feature" also means that once you hit that limit you have no way to get over it.
+*Responsizer, BeeFree, EdmDesigner, Chamaileon and FreeEmailEditor* fall in this group. This approach usually make it easier to create a **powerful editor with many customization options**, but this "feature" also means that once you hit that limit you have no way to get over it.
 
-Template builders belonging to the latter category defines the **flexibility level** and the **customization power** and they target only **one kind of users, the "final users"**: depending on the customization power they can satisfy a smaller or larger audience but they are never targeted to "email developers".
+Template builders belonging to the latter category defines the **flexibility level** and the **customization power** and they target only **one kind of users, the "final users"**: depending on the customization power they can satisfy a smaller or larger audience but they are never targeted to "email developers". These email builders aim to satisfy the needs of designers, marketers and #emailgeeks who want to leave coding behind but need the flexibility 
 
 Editors in the former category defines what flexibility to leave to **template developers** and template developers choose how to use this flexibility: they target **two kind of users**: *"email developers"* and *"final users"* but they often fail to satisfy the **"advanced, but non-developer, user"**.
 
