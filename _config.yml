@@ -9,8 +9,8 @@ basepath: "" # used for host-relative paths
 description: "Mosaico is the first open source email template editor proudly brought to you by VOXmail: it is powerful and free! The email template builder supports responsive design and live wysiwyg editing."
 keywords: "responsive email designer, email editor, free email builder, email template creator, open source mail editor, newsletter editor, template builder"
 titlepostfix: " | Mosaico.io"
-mosaico_version: 0.18.1
-editor_path: editor-0.18.1.html
+mosaico_version: 0.18.2
+editor_path: editor-0.18.2.html
 # google_analytics_id: UA-61367795-1
 # piwikpro_id: "d2d1ac4f-5015-4a6d-a26f-bd99bbb89141"
 # piwikpro_url: "https://mosaico.containers.piwik.pro/"
