@@ -14,7 +14,7 @@ We did some search to find existing informations about Yandex issues, but found 
 ### What we found
 
 Yandex.com webmail usually removes a properties if it doesn't know it or doesn't understand the property value, but it sometimes remove the whole style!
-
+<!--more-->
 We found that the **full style attribute removal happens in a couple of cases**:
 
 - When there are round brackets in a property value and you have some symbols in the content, like '\_', '-', '+', '\*', '&'
