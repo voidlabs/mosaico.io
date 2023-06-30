@@ -12,7 +12,7 @@ On the other side **it took 4 iterations to have our first 0.17.x stable release
 ![Mosaico 0.17](/assets/images/mosaico-0.17.png)
 
 Let's see the changes...
-<!--break-->
+<!--more-->
 
 ## Final User changes/improvements
 
