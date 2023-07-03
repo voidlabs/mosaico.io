@@ -1,3 +1,1 @@
-gem 'github-pages'
-gem 'jekyll-less'
-gem 'jekyll-coffeescript'
+gem 'github-pages', group: :jekyll_plugins
