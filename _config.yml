@@ -18,6 +18,7 @@ editor_path: editor-0.18.7.html
 repository: voidlabs/mosaico.io
 
 twitter_username: mosaicoeditor
+github: [metadata]
 github_username:  bago
 permalink: /:categories/:title/
 excerpt_separator: <!--more-->
