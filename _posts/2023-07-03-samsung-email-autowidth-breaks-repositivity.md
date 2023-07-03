@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Samsung Email Autowidth feature breaks responsivity. Here is a workaround!
-date:   2023-07-03 14:00:00
+date:   2023-07-03 01:00:00
 categories: email-client-tricks
 ---
 
