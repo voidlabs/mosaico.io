@@ -15,6 +15,7 @@ editor_path: editor-0.18.7.html
 # piwikpro_id: "d2d1ac4f-5015-4a6d-a26f-bd99bbb89141"
 # piwikpro_url: "https://mosaico.containers.piwik.pro/"
 
+repository: voidlabs/mosaico.io
 twitter_username: mosaicoeditor
 github: [metadata]
 github_username:  bago
