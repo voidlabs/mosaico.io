@@ -44,17 +44,14 @@ function myCallback(hypeDocument, element, event) {
                     
                 <h2 class="section-heading">Choose a template to start...</h2>
                 <hr class="light">
-                <p>
                 <div data-bind="foreach: templates">
                   <div class="template template-xx" style="" data-bind="attr: { class: 'template template-'+name }">
                     <div class="description" style="padding-bottom:5px"><b data-bind="text: name">xx</b>: <span data-bind="text: desc">xx</span></div>
                     <a href="#"  data-bind="click: $root.newEdit.bind(undefined, name), attr: { href: '{{site.editor_path}}#templates/'+name+'/template-'+name+'.html' }">
                       <img src width="100%" alt="xx" data-bind="attr: { src: '{{site.basepath}}/templates/'+name+'/edres/_full.png' }">
                     </a>
-                    
                   </div>
                 </div>
-                </p>
 
       <p class="text-faded">Design and code an email that <strong>works on every device</strong> and client is a huge and <strong>demanding work</strong> also for professionals.<br />Mosaico allows you to realize <strong>a beautiful and effective template</strong>,<br /> without a <strong>team of professionals</strong> and hours of testing to make it work everywhere.</p>
                 </div>
@@ -68,7 +65,7 @@ function myCallback(hypeDocument, element, event) {
                 <div class="col-lg-12 text-center">
         
                 <div >
-                <h2 class="section-heading"> Saved Sessions </h3>
+                <h2 class="section-heading"> Saved Sessions </h2>
                 <table id="savedTable" align="center" cellspacing="0" cellpadding="8" style="padding: 5px; ">
                
                   <thead><tr>
